@@ -1,0 +1,727 @@
+@media screen and (max-width: 1200px) {
+  /* ========== Home style ========== */
+  //getStarted
+  .getStarted{
+    &__btn{
+      margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  /* ========== Home style ========== */
+  //  Banner style
+  .banner {
+    min-height: 500px;
+  }
+  // choose style
+  .choose {
+    &-card {
+      margin-bottom: 20px;
+    }
+  }
+  //steps style
+  .steps {
+    padding-bottom: 40px;
+    &__bgImg {
+      background-image: none;
+      min-height: auto;
+    }
+    &__title {
+      text-align: center;
+      padding-top: 0;
+    }
+  }
+  //announcements style
+  .announcements {
+    &-card {
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      &__title {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      &__text {
+        & ~ .announcements-card__text {
+          margin-top: 10px;
+        }
+      }
+      &__link {
+        margin-top: 10px;
+      }
+    }
+  }
+  //footer style
+  .footer {
+    &-top {
+      &__logo {
+        margin-bottom: 18px;
+      }
+      &__title {
+        font-size: 18px;
+        margin-bottom: 24px;
+      }
+      &__text{
+        margin-bottom: 50px;
+      }
+      &__col {
+        padding: 0 40px 0 0;
+      }
+    }
+  }
+  /* ========== About style ========== */
+  //about we are
+  .about-weAre {
+    &__bgImg {
+      background-size: 44%;
+      background-position: right 28px;
+    }
+    &__block {
+      margin-right: 0;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__text {
+      & ~ .about-weAre__text {
+        margin-top: 10px;
+      }
+    }
+    &__btn {
+      margin-top: 20px;
+    }
+  }
+  // about secure
+  .about-secure {
+    &__bgImg {
+      background-size: 44%;
+      background-position: left 28px;
+    }
+    &__block {
+      margin-left: 0;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
+  }
+  /* ========== Help style ========== */
+  .help{
+    &__accordion{
+      display: block;
+      width: 370px;
+      height: 100%;
+      background: #FFFFFF;
+      overflow: auto;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      transition: all 0.3s;
+      z-index: 999;
+    }
+    &__content{
+      padding-top: 30px;
+      padding-left: 0;
+    }
+    &-tab--close{
+      display: block;
+      margin-top: 10px;
+    }
+    &__mobile--close{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 5px;
+    }
+    &__title {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+    &__text{
+      & ~ .help__text {
+        margin-top: 10px;
+      }
+    }
+    &__list {
+      margin: 15px 0;
+    }
+    &__item{
+      line-height: 1.563;
+    }
+    &__subtitle {
+      font-size: 18px;
+      margin: 20px 0 10px 0;
+    }
+    &__FAQTitle {
+      font-size: 16px;
+      padding: 10px;
+    }
+    &__FAQText{
+      & ~ .help__FAQText {
+        padding-top: 10px;
+      }
+    }
+    .card-body {
+      padding: 10px;
+    }
+  }
+  /* ========== Contact style ========== */
+  // contact form
+  .contact-form {
+    &__span {
+      display: inline;
+    }
+  }
+  // contact info
+  .contact-info {
+    &__imgBox {
+      width: 60px;
+      height: 60px;
+    }
+    &__title {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    &__col {
+      margin-bottom: 20px;
+    }
+  }
+  /* ========== Announcement style ========== */
+  .announcement-inside {
+    &-right {
+      padding-left: 0;
+      &__header{
+        margin-bottom: 10px;
+      }
+      &__row {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+      }
+      &__title{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  /* ========== Home style ========== */
+  // main style
+  .main{
+    padding-top: 65px;
+  }
+  .button {
+    height: 35px;
+    line-height: 33px;
+    font-size: 13px;
+    padding: 0 20px;
+  }
+  // header
+  .header {
+    height: 65px;
+    padding: 0 15px;
+    &__item {
+      margin-right: 20px;
+    }
+    &__link {
+      font-size: 13px;
+    }
+    &__btnItem{
+      & ~ .header__btnItem {
+        margin-left: 10px;
+      }
+    }
+  }
+  // Banner
+  .banner{
+    min-height: 390px;
+    &__title {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    &__text {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    &__btn{
+      &  ~ .banner__btn{
+        margin-left: 10px;
+      }
+    }
+  }
+  // choose
+  .choose{
+    &__title {
+      font-size: 28px;
+    }
+    &-card__title {
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  // steps
+  .steps{
+    &__title {
+      font-size: 28px;
+    }
+    &__listTitle {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  // announcements
+  .announcements{
+    &__title {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+  }
+  //getStarted
+  .getStarted{
+    &__title{
+      margin-bottom: 10px;
+    }
+    .btnLight{
+      line-height: 33px;
+    }
+  }
+  /* ========== About style ========== */
+  // about we are
+  .about-weAre{
+    &__bgImg{
+      background-image: none;
+      min-height: auto;
+    }
+    &__block{
+      margin-top: 0;
+    }
+    &__title{
+      font-size: 28px;
+    }
+  }
+  // about secure
+  .about-secure{
+    &__bgImg{
+      background-image: none;
+      min-height: auto;
+    }
+    &__block{
+      margin-top: 0;
+    }
+    &__title{
+      font-size: 28px;
+    }
+  }
+  /* ========== Help style ========== */
+  // help banner
+  .help-banner{
+    &__search{
+      width: 100%;
+    }
+  }
+  /* ========== Contact style ========== */
+  // contact form
+  .contact-form{
+    padding: 30px 0 40px 0;
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+  // contact info
+  .contact-info{
+    padding-bottom: 30px;
+  }
+  /* ========== Announcement style ========== */
+  .announcement-inside {
+    &-right {
+      margin-top: 30px;
+    }
+  }
+  /* ========== Auth style ========== */
+  .auth{
+    &-banner {
+      background-size: 47%;
+    }
+    &-banner-2 {
+      background-size: 47%;
+    }
+    &__span {
+      display: inline-block;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .body{
+    font-size: 13px;
+  }
+  /* ========== Home style ========== */
+  /* ----- header style ----- */
+  .header{
+    &-mobile {
+      display: block;
+      margin-left: 10px;
+    }
+    &__list {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #FFFFFF;
+      overflow: auto;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      z-index: 99;
+      padding-top: 65px;
+      flex-direction: column;
+      transition: all 0.3s;
+    }
+    &__link{
+      font-size: 16px;
+      text-align: center;
+    }
+    &__item {
+      border-bottom: 1px solid #f3f3f3;
+      margin-right: 0;
+      padding: 20px 15px;
+      & + .header__item {
+        margin-left: 0;
+      }
+    }
+  }
+  // banner
+  .banner{
+    min-height: 280px;
+    &__title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 13px;
+    }
+  }
+  // choose
+  .choose{
+    &__title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+  // steps
+  .steps{
+    &__title {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    &__item{
+      &~ .steps__item {
+        margin-top: 20px;
+      }
+    }
+    &__listNumber {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      margin-right: 20px;
+    }
+  }
+  //announcements
+  .announcements{
+    &-card{
+      &__details{
+        font-size: 13px;
+      }
+    }
+    &__title {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  }
+  //getStarted
+  .getStarted{
+    &__title{
+      font-size: 24px;
+    }
+  }
+  //footer
+  .footer{
+    &-top{
+      padding: 30px 0 0 0;
+      &__logo{
+        text-align: center;
+      }
+      &__title{
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      &__text {
+        margin-bottom: 0;
+        text-align: justify;
+        padding: 0 30px;
+      }
+      &__item{
+        text-align: center;
+      }
+      &__col {
+        padding: 0;
+        margin: auto auto 30px auto;
+      }
+    }
+  }
+  /* ========== About style ========== */
+  .about-banner,
+  .help-banner,
+  .contact-banner{
+    min-height: 190px;
+  }
+  .about-banner__title,
+  .help-banner__title,
+  .contact-banner__title{
+    font-size: 32px;
+  }
+  // about we are
+  .about-weAre{
+    &__title{
+      font-size: 24px;
+    }
+  }
+  // about secure
+  .about-secure{
+    &__title{
+      font-size: 24px;
+    }
+  }
+  /* ========== Help style ========== */
+  // help banner
+  .help-banner{
+    &__search{
+      margin: 15px auto auto auto;
+      &__input {
+        height: 40px;
+      }
+    }
+  }
+  // help section
+  .help{
+    &__accordion {
+      width: 300px;
+    }
+    &__title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    &__item{
+      &:before {
+        width: 5px;
+        height: 5px;
+        margin-right: 10px;
+      }
+    }
+    &__FAQText{
+      & ~ .help__FAQText {
+        padding-top: 5px;
+      }
+    }
+  }
+  /* ========== Contact style ========== */
+  // contact form
+  .contact-form{
+    &__col{
+      margin-bottom: 10px;
+    }
+    input{
+      height: 40px;
+      font-size: 13px;
+    }
+    textarea {
+      min-height: 110px;
+      font-size: 13px;
+    }
+  }
+  // contact info
+  .contact-info{
+    &__title{
+      font-size: 16px;
+    }
+  }
+  // contact map
+  .contact-map{
+    iframe{
+      height: 190px;
+    }
+  }
+  /* ========== Announcement style ========== */
+  .announcement {
+    &__body{
+      padding: 40px 0;
+    }
+    &__text {
+      margin-top: 10px;
+    }
+    &-right{
+      &__header{
+        font-size: 18px;
+      }
+    }
+  }
+  /* ========== Terms style ========== */
+  .terms{
+    &__body {
+      padding: 50px 0;
+    }
+    &__text{
+      & ~ .terms__text {
+        margin-top: 10px;
+      }
+    }
+  }
+  /* ========== Auth style ========== */
+  .auth{
+    &-banner{
+      background-image: none;
+      .form-control {
+        height: 40px;
+        font-size: 13px;
+      }
+      .custom-control-label{
+        margin-top: 5px;
+      }
+      .auth__form{
+        margin: 20px auto auto auto;
+        .form-group {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &-banner-2 {
+      background-image: none;
+    }
+    &__title {
+      font-size: 22px;
+    }
+    &__text {
+      line-height: 1.2;
+      margin-top: 10px;
+    }
+    &__details{
+      font-size: 13px;
+    }
+    &__pass {
+      border-left: 0;
+      padding-left: 0;
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  /* ========== Home style ========== */
+  // choose
+  .choose{
+    &__title {
+      font-size: 20px;
+    }
+    &-card{
+      &__title {
+        font-size: 16px;
+      }
+    }
+  }
+  // steps
+  .steps {
+    &__title {
+      font-size: 20px;
+    }
+    &__listTitle {
+      font-size: 16px;
+    }
+  }
+  // announcements
+  .announcements{
+    &-card{
+      &__title {
+        font-size: 16px;
+      }
+    }
+    &__title {
+      font-size: 20px;
+    }
+  }
+  //getStarted
+  .getStarted{
+    &__title{
+      font-size: 20px;
+    }
+  }
+  /* ========== About style ========== */
+  // about we are
+  .about-weAre{
+    padding: 30px 0;
+    &__title{
+      font-size: 20px;
+    }
+  }
+  // about secure
+  .about-secure{
+    padding: 30px 0;
+    &__title{
+      font-size: 20px;
+    }
+  }
+  /* ========== Contact style ========== */
+  // contact form
+  .contact-form{
+    &__title {
+      font-size: 18px;
+    }
+  }
+  /* ========== Auth style ========== */
+  .auth{
+    &__form{
+      width: 100%;
+    }
+    &__title {
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (max-width: 330px) {
+  .button {
+    height: 30px;
+    line-height: 27px;
+    font-size: 12px;
+    padding: 0 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

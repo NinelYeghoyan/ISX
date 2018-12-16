@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../css/libs.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,400,700" rel="stylesheet">
+</head>
+<body class="body">
+<header class="header">
+    <div>
+        <a class="header__logo" href="../index.html">ISX</a>
+    </div>
+    <div class="header__nav">
+        <ul class="header__list">
+            <li class="header__item">
+                <a class="header__link" href="../index.html">Home</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="about.html">About</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="help.html">Help</a>
+            </li>
+            <li class="header__item">
+                <a class="header__link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="header__buttons">
+            <div class="header__btnItem">
+                <a href="signup.html" class="button btnLight" >Sign up</a>
+            </div>
+        </div>
+        <div class="header-mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="auth-banner">
+        <div class="auth-banner-2 d-flex align-items-center">
+            <div class="container">
+                <h1 class="auth__title">Log in</h1>
+                <div class="auth__form">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label auth__details" for="customCheck1">Remember me</label>
+                            </div>
+                            <div class="auth__pass">
+                                <a href="#" class="auth__details">Forgot password?</a>
+                            </div>
+                        </div>
+                        <div class="auth__buttonRow d-flex justify-content-center">
+                            <button type="submit" class="button">Log in</button>
+                        </div>
+                        <div class="auth__line">
+                            <p class="auth__details">Don't have an account?
+                                <a href="signup.html" class="auth__link">Sign up</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="../js/libs.min.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>
