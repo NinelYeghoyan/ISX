@@ -328,6 +328,7 @@
       text-align: right;
     }
     &__title{
+      display: inline-block;
       font-size: 22px;
       color: $blue;
       margin-top: 25px;
