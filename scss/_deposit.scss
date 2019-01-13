@@ -1,0 +1,63 @@
+@import "_variables";
+// deposit
+.deposit{
+  margin-bottom: 50px;
+  &__formGroup{
+    margin-bottom: 30px;
+  }
+  &__label{
+    font-size: 15px;
+    color: rgb(139, 139, 139);
+    margin-bottom: 13px;
+  }
+  &__title{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(97, 97, 97);
+    margin-bottom: 30px;
+  }
+  &__text{
+    color: rgb(97, 97, 97);
+    line-height: 1.375;
+    & ~ .deposit__text{
+      margin-top: 26px;
+    }
+  }
+  &__infoRow{
+    margin-top: 30px;
+    &--benef{
+      margin-bottom: 20px;
+    }
+  }
+  &__info{
+    font-weight: bold;
+    line-height: 1.375;
+    color: rgb(97, 97, 97);
+  }
+  &__value{
+    font-weight: bold;
+    line-height: 1.375;
+    color: rgb(97, 97, 97);
+    padding-left: 30px;
+  }
+  &__barCode{
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 3px;
+    padding: 20px;
+    margin: auto;
+    img{
+      width: 100%;
+    }
+  }
+}
+// deposit history
+.deposit-history{
+  .tbl{
+    &__title{
+      font-weight: bold;
+    }
+    &-head{
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import "_variables";
+.addressesMain{
+  .main__child{
+    margin-bottom: 50px;
+  }
+}
+// addresses
+.addresses{
+  &__row{
+    margin-bottom: 20px;
+  }
+  &__title{
+    font-size: 20px;
+    color: rgb(97, 97, 97);
+    margin-right: 22px;
+  }
+  &__add{
+    position: relative;
+    &__list{
+      display: none;
+      min-width: 400px;
+      position: absolute;
+      z-index: 99;
+      top: 65px;
+      right: 0;
+      border: 1px solid #dedede;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
+      padding: 30px 20px;
+    }
+  }
+}
+// addresses account
+.addresses-account{
+  &__row{
+    padding: 25px;
+    border: 1px solid #dedede;
+  }
+  &__title{
+    display: block;
+    font-size: 15px;
+    color: rgb(139, 139, 139);
+    margin-bottom: 19px;
+  }
+  &__info{
+    font-size: 20px;
+    color: rgb(97, 97, 97);
+  }
+  &--delete{
+    text-align: right;
+    cursor: pointer;
+  }
+  &__col_5{
+    width: 5%;
+    flex-shrink: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  &__col_15{
+    width: 15%;
+    flex-shrink: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  &__col_30{
+    width: 30%;
+    flex-shrink: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  &__col_25{
+    width: 25%;
+    flex-shrink: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  &__col_50{
+    width: 50%;
+    flex-shrink: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+// addresses crypto
+.addresses-crypto{
+  border-top: 1px solid #dedede;
+  padding-top: 40px;
+  margin-top: 70px;
+}

@@ -10,6 +10,15 @@
 }
 .main{
   padding-top: 80px;
+  &__child{
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+}
+.oe{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .button{
   display: inline-flex;
@@ -90,6 +99,22 @@
     & ~ .header__btnItem{
       margin-left: 20px;
     }
+  }
+  &__user{
+    .header__link{
+      color: rgb(97, 97, 97);
+    }
+    .header__item{
+      &:last-child{
+        margin-right: 25px;
+      }
+    }
+  }
+  &__userMail{
+    font-size: 14px;
+    border-left: 1px solid #01567A;
+    color: rgb(97, 97, 97);
+    padding-left: 20px;
   }
 }
 // header mobile style
@@ -328,6 +353,7 @@
       text-align: right;
     }
     &__title{
+      display: inline-block;
       font-size: 22px;
       color: $blue;
       margin-top: 25px;
@@ -425,14 +451,157 @@
     }
   }
 }
+// dropdown style
+.drop{
+  position: relative;
+  &__buttonBox{
+    height: 45px;
+    padding: 0 20px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  &__button{
+    color: #696969;
+  }
+  &__list{
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
+    border: 1px solid rgb(222, 222, 222);
+    border-top: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  &__item{
+    transition: .2s ease;
+    &:hover{
+      background-color: #F5F9FF;
+    }
+  }
+  &__link{
+    display: block;
+    color: #696969;
+    padding: 15px 20px;
+  }
+  &__rotate{
+    transition: .2s ease;
+    transform: rotate(-180deg);
+  }
+  &__none{
+    display: none;
+  }
+}
+// table style
+.tbl{
+  font-size: 15px;
+  border: 1px solid #E7E9F0;
+  border-top: none;
+  &__container{
+    max-width: 1187px;
+    margin: auto;
+  }
+  &__title{
+    font-size: 20px;
+    color: $blue;
+    margin-bottom: 16px;
+  }
+  &-head{
+    height: 55px;
+    border-top: 1px solid #E7E9F0;
+    background-color: #EDF1FD;
+    color: $blue;
+    text-transform: uppercase;
+  }
+  &-th{
+    &--15{
+      width: 15%;
+      padding-left: 50px;
+      padding-right: 34px;
+    }
+    &--20{
+      width: 20%;
+      padding-left: 50px;
+      padding-right: 34px;
+    }
+    &--30{
+      width: 30%;
+      padding-left: 50px;
+      padding-right: 34px;
+    }
+  }
+  &-row{
+    height: 40px;
+    background-color: #fff;
+    color: #444444;
+    border-top: 1px solid #E7E9F0;
+    &:nth-child(even){
+      background-color: #F7F9FF;
+    }
+  }
+  &-status{
+    color: $blue;
+  }
+}
+// pagination style
+.pagination{
+  margin-top: 30px;
+  &__list{
+    margin: auto;
+  }
+  &__item{
+
+  }
+  &__link{
+    display: block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 100%;
+    color: #696969;
+    transition: 0.2s ease;
+    cursor: pointer;
+    margin: 0 1px;
+    &:hover{
+      background-color: #04B578;
+      color: $white;
+    }
+    &--active{
+      background-color: #04B578;
+      color: $white;
+    }
+  }
+  &__linkDisable{
+    display: block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: #696969;
+    margin: 0 1px;
+  }
+}
+// import files
 @import "_auth";
 @import "_about";
 @import "_help";
 @import "_contact";
 @import "_announcement";
 @import "_terms";
+// inside pages
+@import "_deposit";
+@import "_withdraw";
+@import "_history";
+@import "_address";
+@import "_settings";
 @import "_bootstrapStyle";
 @import "_media";
+
 
 
 
