@@ -111,10 +111,66 @@
     }
   }
   &__userMail{
-    font-size: 14px;
-    border-left: 1px solid #01567A;
-    color: rgb(97, 97, 97);
-    padding-left: 20px;
+    position: relative;
+    &__text{
+      font-size: 14px;
+      border-left: 1px solid #01567A;
+      color: rgb(97, 97, 97);
+      padding-left: 20px;
+      cursor: pointer;
+    }
+    &__list{
+      display: none;
+      min-width: 170px;
+      position: absolute;
+      z-index: 99;
+      top: 45px;
+      right: 0;
+      border: 1px solid #dedede;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      &:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -18px;
+        right: 12px;
+        border-width: 9px;
+        border-style: solid;
+        border-color: transparent transparent transparent #ebebeb;
+        transform: rotate(-90deg);
+      }
+      &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -15px;
+        right: 13px;
+        border-width: 8px;
+        border-style: solid;
+        border-color: transparent transparent transparent #fff;
+        transform: rotate(-90deg);
+      }
+    }
+    &__item{
+      transition: .2s ease;
+      &:hover{
+        background-color: #F5F9FF;
+      }
+    }
+    &__link{
+      display: block;
+      font-size: 14px;
+      color: #616161;
+      padding: 10px 15px;
+    }
   }
 }
 // header mobile style
@@ -454,6 +510,9 @@
 // dropdown style
 .drop{
   position: relative;
+  &__parent{
+
+  }
   &__buttonBox{
     height: 45px;
     padding: 0 20px;
@@ -594,10 +653,11 @@
 @import "_announcement";
 @import "_terms";
 // inside pages
+@import "_dashboard";
 @import "_deposit";
 @import "_withdraw";
-@import "_history";
 @import "_address";
+@import "_history";
 @import "_settings";
 @import "_bootstrapStyle";
 @import "_media";

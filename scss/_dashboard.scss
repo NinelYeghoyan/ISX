@@ -1,0 +1,31 @@
+@import "_variables";
+.delete-padding--right{
+  padding-right: 0;
+}
+.padding--left{
+  padding-left: 55px;
+}
+.main__child{
+  .nav-tabs{
+    border-color: #dedede;
+    margin-bottom: 50px;
+  }
+  .nav-item{
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .nav-link{
+    font-size: 18px;
+    color: #616161;
+    background-color: #F7F9FF;
+    border-color: #dedede;
+    padding: 10px 30px;
+    &:hover{
+      color: #01567A;
+    }
+  }
+  .nav-tabs .nav-link.active{
+    color: #01567A;
+    border-color: #dedede #dedede #fff;
+  }
+}
