@@ -1,5 +1,4 @@
 @import "_reset";
-@import "_font";
 @import "_variables";
 @import "_mixins";
 .body{
@@ -630,10 +629,10 @@
       background-color: #04B578;
       color: $white;
     }
-    &--active{
-      background-color: #04B578;
-      color: $white;
-    }
+  }
+  &--active{
+    background-color: #04B578;
+    color: $white;
   }
   &__linkDisable{
     display: block;
@@ -645,6 +644,24 @@
     margin: 0 1px;
   }
 }
+// loader
+.loaderBlock{
+  display: none;
+  .loader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99999999999999;
+    background-color: rgba(0, 0, 0, 0.5);
+    img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
 // import files
 @import "_auth";
 @import "_about";
@@ -654,6 +671,7 @@
 @import "_terms";
 // inside pages
 @import "_dashboard";
+@import "_buySell";
 @import "_deposit";
 @import "_withdraw";
 @import "_address";

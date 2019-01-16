@@ -52,153 +52,6 @@ a:hover, a:focus {
   text-decoration: none; }
 
 /* ---------- End of Reset css ----------*/
-/* ---------- Font Family ------------ */
-/* Roboto-Black */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto Black"), url("../fonts/Roboto-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal; }
-
-/* Roboto-BlackItalic */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto BlackItalic"), url("../fonts/Roboto-BlackItalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic; }
-
-/* Roboto-Bold */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto Bold"), url("../fonts/Roboto-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-
-/* Roboto-BoldItalic */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto BoldItalic"), url("../fonts/Roboto-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic; }
-
-/* Roboto-Italic */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto Italic"), url("../fonts/Roboto-Italic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic; }
-
-/* Roboto-Light */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto Light"), url("../fonts/Roboto-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-
-/* Roboto-LightItalic */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto LightItalic"), url("../fonts/Roboto-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic; }
-
-/* Roboto-Medium */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto Medium"), url("../fonts/Roboto-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal; }
-
-/* Roboto-MediumItalic */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto MediumItalic"), url("../fonts/Roboto-MediumItalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic; }
-
-/* Roboto-Regular */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto Regular"), url("../fonts/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-/* Roboto-Thin */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto Thin"), url("../fonts/Roboto-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal; }
-
-/* Roboto-ThinItalic */
-@font-face {
-  font-family: 'Roboto';
-  src: local("Roboto"), local("Roboto ThinItalic"), url("../fonts/Roboto-ThinItalic.ttf") format("truetype");
-  font-weight: 100;
-  font-style: italic; }
-
-/* Open Sans */
-@font-face {
-  font-family: 'Open Sans';
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("http://hb.bizmrg.com/fonts/opensans/300.woff2") format("woff2"), url("http://hb.bizmrg.com/fonts/opensans/300.woff") format("woff");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url("http://hb.bizmrg.com/fonts/opensans/300i.woff2") format("woff2"), url("http://hb.bizmrg.com/fonts/opensans/300i.woff") format("woff");
-  font-weight: 300;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: local("Open Sans"), local("OpenSans"), url("http://hb.bizmrg.com/fonts/opensans/400.woff2") format("woff2"), url("http://hb.bizmrg.com/fonts/opensans/400.woff") format("woff");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("http://hb.bizmrg.com/fonts/opensans/400i.woff2") format("woff2"), url("http://hb.bizmrg.com/fonts/opensans/400i.woff") format("woff");
-  font-weight: 400;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("http://hb.bizmrg.com/fonts/opensans/600.woff2") format("woff2"), url("http://hb.bizmrg.com/fonts/opensans/600.woff") format("woff");
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url("http://hb.bizmrg.com/fonts/opensans/600i.woff2") format("woff2"), url("http://hb.bizmrg.com/fonts/opensans/600i.woff") format("woff");
-  font-weight: 600;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("http://hb.bizmrg.com/fonts/opensans/700.woff2") format("woff2"), url("http://hb.bizmrg.com/fonts/opensans/700.woff") format("woff");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("http://hb.bizmrg.com/fonts/opensans/700i.woff2") format("woff2"), url("http://hb.bizmrg.com/fonts/opensans/700i.woff") format("woff");
-  font-weight: 700;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url("http://hb.bizmrg.com/fonts/opensans/800.woff2") format("woff2"), url("http://hb.bizmrg.com/fonts/opensans/800.woff") format("woff");
-  font-weight: 800;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Open Sans';
-  src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url("http://hb.bizmrg.com/fonts/opensans/800i.woff2") format("woff2"), url("http://hb.bizmrg.com/fonts/opensans/800i.woff") format("woff");
-  font-weight: 800;
-  font-style: italic; }
-
-/* ----------- End of Font Family ----------*/
 .body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -785,9 +638,9 @@ a:hover, a:focus {
     .pagination__link:hover {
       background-color: #04B578;
       color: #ffffff; }
-    .pagination__link--active {
-      background-color: #04B578;
-      color: #ffffff; }
+  .pagination--active {
+    background-color: #04B578;
+    color: #ffffff; }
   .pagination__linkDisable {
     display: block;
     width: 42px;
@@ -796,6 +649,30 @@ a:hover, a:focus {
     text-align: center;
     color: #696969;
     margin: 0 1px; }
+
+.loaderBlock {
+  display: none; }
+  .loaderBlock .loader {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    z-index: 99999999999999;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .loaderBlock .loader img {
+      width: 40px;
+      height: 40px; }
 
 .auth-banner {
   background-image: url(../img/log-banner-top.png);
@@ -1256,6 +1133,85 @@ a:hover, a:focus {
   color: #01567A;
   border-color: #dedede #dedede #fff; }
 
+.dashboard .drop__buttonBox {
+  height: 100%;
+  border: none; }
+
+.dashboard .drop__button {
+  margin-right: 10px; }
+
+.dashboard .drop__list {
+  top: 30px; }
+
+.dashboard__box {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  border: 1px solid #dedede; }
+
+.dashboard__rowTitle {
+  padding: 17px 20px; }
+
+.dashboard__row {
+  padding: 20px;
+  border-top: 1px solid #dedede; }
+
+.dashboard__title {
+  color: #01567a; }
+
+.dashboard__text {
+  font-size: 18px;
+  color: dimgray;
+  margin-bottom: 10px; }
+
+.dashboard__info {
+  font-size: 14px;
+  color: #929292;
+  text-transform: capitalize; }
+
+.dashboard__valueDeposit {
+  font-size: 14px;
+  color: #04b578;
+  text-transform: capitalize; }
+
+.dashboard__valueWithdraw {
+  font-size: 14px;
+  color: #ff5b91;
+  text-transform: capitalize; }
+
+.dashboard__viewAll {
+  font-family: 'Open Sans', sans-serif;
+  color: dimgray;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.dashboard__announcement .dashboard__row {
+  padding-top: 13px;
+  padding-bottom: 13px; }
+
+.dashboard__announceRow {
+  padding: 10px 20px;
+  border-top: 1px solid #dedede; }
+
+.dashboard__announce {
+  padding-right: 100px; }
+  .dashboard__announce__title {
+    display: inline-block;
+    font-size: 18px;
+    color: dimgray;
+    margin-bottom: 10px; }
+  .dashboard__announce__text {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #929292; }
+  .dashboard__announce__date {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: right;
+    color: #929292; }
+
 .deposit {
   margin-bottom: 50px; }
   .deposit__formGroup {
@@ -1559,6 +1515,10 @@ a:hover, a:focus {
 
 .settings__API .settings__btnRow {
   margin-top: 18px; }
+
+.settings__generateText {
+  display: none;
+  margin-top: 30px; }
 
 .settings__form {
   margin-top: 28px; }

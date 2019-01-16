@@ -5,6 +5,7 @@
 .padding--left{
   padding-left: 55px;
 }
+// tabs style
 .main__child{
   .nav-tabs{
     border-color: #dedede;
@@ -29,3 +30,95 @@
     border-color: #dedede #dedede #fff;
   }
 }
+// dashboard
+.dashboard{
+  // dropdown style
+  .drop__buttonBox{
+    height: 100%;
+    border: none;
+  }
+  .drop__button{
+    margin-right: 10px;
+  }
+  .drop__list{
+    top: 30px;
+  }
+  &__box{
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+  }
+  &__rowTitle{
+    padding: 17px 20px;
+  }
+  &__row{
+    padding: 20px;
+    border-top: 1px solid #dedede;
+  }
+  &__title{
+    color: rgb(1, 86, 122);
+  }
+  &__text{
+    font-size: 18px;
+    color: rgb(105, 105, 105);
+    margin-bottom: 10px;
+  }
+  &__info{
+    font-size: 14px;
+    color: rgb(146, 146, 146);
+    text-transform: capitalize;
+  }
+  &__valueDeposit{
+    font-size: 14px;
+    color: rgb(4, 181, 120);
+    text-transform: capitalize;
+  }
+  &__valueWithdraw{
+    font-size: 14px;
+    color: rgb(255, 91, 145);
+    text-transform: capitalize;
+  }
+  &__viewAll{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(105, 105, 105);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__announcement{
+    .dashboard__row{
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+  }
+  &__announceRow{
+    padding: 10px 20px;
+    border-top: 1px solid #dedede;
+  }
+  &__announce{
+    padding-right: 100px;
+    &__title{
+      display: inline-block;
+      font-size: 18px;
+      color: rgb(105, 105, 105);
+      margin-bottom: 10px;
+    }
+    &__text{
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.2;
+      color: rgb(146, 146, 146);
+    }
+    &__date{
+      font-size: 14px;
+      font-style: italic;
+      line-height: 1.2;
+      text-align: right;
+      color: rgb(146, 146, 146);
+    }
+  }
+
+}
+
+
+
+

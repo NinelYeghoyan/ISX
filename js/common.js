@@ -38,6 +38,21 @@ $(document).ready(function () {
     $(".header__userMail").click(function() {
         $(this).find(".header__userMail__list").toggle();
     });
+    // settings generate Btn
+    $(".settings__generateBtn").click(function() {
+        setTimeout(function(){
+            $(".settings__generateText").toggle();
+        }, 2000);
+    });
+    // loader
+    $(".loader-btn").click(function() {
+        $(".loaderBlock").css("display", "block");
+        $('.body').css("overflow","hidden");
+        setTimeout(function(){
+            $(".loaderBlock").css("display", "none");
+            $('.body').css("overflow","auto");
+        }, 2000);
+    });
 });
 // ------ header menu part -------
 var funct =  function () {

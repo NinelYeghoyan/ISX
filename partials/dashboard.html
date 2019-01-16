@@ -6,11 +6,19 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ISX Dashboard</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- end of font -->
     <link rel="stylesheet" href="../css/libs.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,400,700" rel="stylesheet">
 </head>
 <body class="body">
+<div class="loaderBlock">
+    <div class="loader">
+        <img src="../img/icons/loader.gif" alt="loader"/>
+    </div>
+</div>
 <header class="header header__user">
     <div>
         <a class="header__logo" href="../index.html">ISX</a>
@@ -21,7 +29,7 @@
                 <a class="header__link" href="dashboard.html">Dashboard</a>
             </li>
             <li class="header__item">
-                <a class="header__link" href="#">buy/sell</a>
+                <a class="header__link" href="buySell.html">buy/sell</a>
             </li>
             <li class="header__item">
                 <a class="header__link" href="deposit.html">Deposit</a>
@@ -75,8 +83,106 @@
         </div>
         <!-- Tab panes -->
         <div class="tab-content">
+            <!-- =============== dashboard tab =============== -->
             <div id="dashboard" class="container tab-pane active">
                 <h3 class="inside-header">Dashboard</h3>
+                <section class="dashboard">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="dashboard__box">
+                                <div class="dashboard__rowTitle d-flex align-items-center justify-content-between">
+                                    <h6 class="dashboard__title">Recent activity</h6>
+                                    <div class="drop__parent">
+                                        <div class="drop">
+                                            <div class="drop__buttonBox d-flex align-items-center">
+                                                <span class="drop__button">Requests</span>
+                                                <img src="../img/icons/arrow_down.png" alt="arrow down" class="">
+                                            </div>
+                                            <ul class="drop__list">
+                                                <li class="drop__item drop__none">
+                                                    <a href="#" class="drop__link">Requests</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">Requests_1</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">Requests_2</a>
+                                                </li>
+                                                <li class="drop__item">
+                                                    <a href="#" class="drop__link">Requests_3</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard__row d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="dashboard__text">Apr 16</p>
+                                        <p class="dashboard__info">Pending (2 confirmation)</p>
+                                    </div>
+                                    <div>
+                                        <p class="dashboard__text">0.95412178 BTC</p>
+                                        <p class="dashboard__valueDeposit text-right">Deposit</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard__row d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="dashboard__text">Apr 10</p>
+                                        <p class="dashboard__info">confirmed</p>
+                                    </div>
+                                    <div>
+                                        <p class="dashboard__text">0.95412178 BTC</p>
+                                        <p class="dashboard__valueWithdraw text-right">withdraw</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard__row d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <p class="dashboard__text">Apr 8</p>
+                                        <p class="dashboard__info">Pending (2 confirmation)</p>
+                                    </div>
+                                    <div>
+                                        <p class="dashboard__text">0.95412178 BTC</p>
+                                        <p class="dashboard__valueDeposit text-right">Deposit</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard__row d-flex align-items-center justify-content-center">
+                                    <p class="dashboard__viewAll">view all</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="dashboard__box">
+                                <div class="dashboard__rowTitle d-flex">
+                                    <h6 class="dashboard__title">Announcements</h6>
+                                </div>
+                                <div class="dashboard__announceRow">
+                                    <div class="dashboard__announce">
+                                        <a href="#" class="dashboard__announce__title">Crypto-Chaos After fork cancellation</a>
+                                        <p class="dashboard__announce__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                    </div>
+                                    <p class="dashboard__announce__date">Apr 11, 2018</p>
+                                </div>
+                                <div class="dashboard__announceRow">
+                                    <div class="dashboard__announce">
+                                        <a href="#" class="dashboard__announce__title">Crypto-Chaos After fork cancellation</a>
+                                        <p class="dashboard__announce__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                    </div>
+                                    <p class="dashboard__announce__date">Apr 11, 2018</p>
+                                </div>
+                                <div class="dashboard__announceRow">
+                                    <div class="dashboard__announce">
+                                        <a href="#" class="dashboard__announce__title">Crypto-Chaos After fork cancellation</a>
+                                        <p class="dashboard__announce__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                    </div>
+                                    <p class="dashboard__announce__date">Apr 11, 2018</p>
+                                </div>
+                                <div class="dashboard__row d-flex align-items-center justify-content-center">
+                                    <p class="dashboard__viewAll">view all</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
             <!-- =============== address tab =============== -->
             <div id="address" class="tab-pane fade">
@@ -91,7 +197,7 @@
                                     <img src="../img/icons/info.png" alt="info"/>
                                 </div>
                                 <div class="addresses__add">
-                                    <a href="#" class="addresses__add__btn banner__btn button btnLight">add account</a>
+                                    <button class="addresses__add__btn banner__btn button btnLight">add account</button>
                                     <div class="addresses__add__list">
                                         <form>
                                             <div class="form-group">
@@ -107,7 +213,7 @@
                                                 <input type="text" class="form-control" placeholder="Routing number">
                                             </div>
                                             <div class="d-flex justify-content-center">
-                                                <a href="" class="button">Add</a>
+                                                <button class="button">Add</button>
                                             </div>
                                         </form>
                                     </div>
@@ -349,6 +455,46 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- pagination -->
+                                <section class="pagination">
+                                    <div class="container">
+                                        <div class="row">
+                                            <ul class="pagination__list d-flex align-items-center">
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">
+                                                        <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                    </a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">1</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link pagination--active" href="#">2</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">3</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">4</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">5</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">...</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">20</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">
+                                                        <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
                             </section>
                             <!-- History order -->
                             <section id="order" class="history-order history-table">
@@ -470,6 +616,46 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- pagination -->
+                                <section class="pagination">
+                                    <div class="container">
+                                        <div class="row">
+                                            <ul class="pagination__list d-flex align-items-center">
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">
+                                                        <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                    </a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">1</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link pagination--active" href="#">2</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">3</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">4</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">5</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">...</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">20</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">
+                                                        <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
                             </section>
                             <!-- History login -->
                             <section id="login" class="history-login history-table">
@@ -552,6 +738,46 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- pagination -->
+                                <section class="pagination">
+                                    <div class="container">
+                                        <div class="row">
+                                            <ul class="pagination__list d-flex align-items-center">
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">
+                                                        <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                    </a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">1</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link pagination--active" href="#">2</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">3</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">4</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">5</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">...</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">20</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">
+                                                        <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
                             </section>
                             <!-- History request -->
                             <section id="request" class="history-request history-table">
@@ -659,46 +885,47 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- pagination -->
+                                <section class="pagination">
+                                    <div class="container">
+                                        <div class="row">
+                                            <ul class="pagination__list d-flex align-items-center">
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">
+                                                        <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                    </a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">1</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link pagination--active" href="#">2</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">3</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">4</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">5</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">...</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__link" href="#">20</a>
+                                                </li>
+                                                <li class="pagination__item">
+                                                    <a class="pagination__linkDisable" href="#">
+                                                        <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
                             </section>
-                        </div>
-                    </div>
-                </section>
-                <section class="pagination">
-                    <div class="container">
-                        <div class="row">
-                            <ul class="pagination__list d-flex align-items-center">
-                                <li class="pagination__item">
-                                    <a class="pagination__linkDisable" href="#">
-                                        <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
-                                    </a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">1</a>
-                                </li>
-                                <li class="pagination__item active">
-                                    <a class="pagination__link pagination__link--active" href="#">2</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">3</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">4</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">5</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__linkDisable" href="#">...</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__link" href="#">20</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a class="pagination__linkDisable" href="#">
-                                        <img src="../img/icons/arrow-next.png" alt="arrow next"/>
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </section>
@@ -777,7 +1004,7 @@
                                         </div>
                                     </div>
                                     <div class="settings__btnRow d-flex justify-content-center">
-                                        <a href="#" class="banner__btn button btnLight">update</a>
+                                        <button class="loader-btn banner__btn button btnLight">update</button>
                                     </div>
                                 </div>
                                 <!-- API Access -->
@@ -790,7 +1017,10 @@
                                         </p>
                                     </div>
                                     <div class="settings__btnRow d-flex justify-content-center">
-                                        <a href="#" class="banner__btn button btnLight">generate key</a>
+                                        <button class="loader-btn settings__generateBtn banner__btn button btnLight">generate key</button>
+                                    </div>
+                                    <div class="colWidth settings__generateText">
+                                        <p class="settings__text">Lorem ipsum dolor sit amet, consectetur adipisicing</p>
                                     </div>
                                 </div>
                                 <!-- Disable account -->
@@ -800,7 +1030,7 @@
                                         <p class="settings__text">Clicking this button will disable your account. If you change your mind, you can reactivate it by logging in.</p>
                                     </div>
                                     <div class="settings__btnRow d-flex justify-content-center">
-                                        <a href="#" class="banner__btn button btnLight">disable</a>
+                                        <button class="loader-btn banner__btn button btnLight">disable</button>
                                     </div>
                                 </div>
                             </section>
@@ -812,7 +1042,7 @@
                                         <p class="settings__text">Be sure to always use secure login through</p>
                                         <a href="#" class="settings__link">http://www.fvzdfv.is/login.php </a>
                                         <div class="settings__btnRow d-flex justify-content-center">
-                                            <a href="#" class="banner__btn button btnLight">Enable</a>
+                                            <button class="loader-btn banner__btn button btnLight">Enable</button>
                                         </div>
                                     </div>
                                 </div>
@@ -830,7 +1060,7 @@
                                                     <input type="password" class="form-control" placeholder="Confirm password">
                                                 </div>
                                                 <div class="settings__btnRow d-flex justify-content-center">
-                                                    <button class="banner__btn button btnLight">Save changes</button>
+                                                    <button type="submit" class="banner__btn button btnLight">Save changes</button>
                                                 </div>
                                             </form>
                                         </div>
