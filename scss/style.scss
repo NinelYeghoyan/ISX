@@ -575,6 +575,9 @@
     color: $blue;
     text-transform: uppercase;
   }
+  &-body{
+    position: relative;
+  }
   &-th{
     &--15{
       width: 15%;
@@ -612,27 +615,30 @@
     margin: auto;
   }
   &__item{
-
-  }
-  &__link{
-    display: block;
     width: 42px;
     height: 42px;
     line-height: 42px;
     text-align: center;
     border-radius: 100%;
-    color: #696969;
     transition: 0.2s ease;
-    cursor: pointer;
     margin: 0 1px;
-    &:hover{
-      background-color: #04B578;
-      color: $white;
+    .pagination__link{
+      &:hover{
+        border-radius: 100%;
+        background-color: #04B578;
+        color: $white;
+      }
     }
+  }
+  &__link{
+    display: block;
+    color: #696969;
   }
   &--active{
     background-color: #04B578;
-    color: $white;
+    .pagination__link{
+      color: $white;
+    }
   }
   &__linkDisable{
     display: block;
@@ -645,21 +651,38 @@
   }
 }
 // loader
-.loaderBlock{
+.loader{
   display: none;
-  .loader{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 99999999999999;
-    background-color: rgba(0, 0, 0, 0.5);
-    img{
-      width: 40px;
-      height: 40px;
-    }
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+  user-select: none;
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+.overlay{
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+  user-select: none;
+  img{
+    width: 30px;
+    height: 30px;
   }
 }
 // import files

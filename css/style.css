@@ -595,6 +595,8 @@ a:hover, a:focus {
     background-color: #EDF1FD;
     color: #01567A;
     text-transform: uppercase; }
+  .tbl-body {
+    position: relative; }
   .tbl-th--15 {
     width: 15%;
     padding-left: 50px;
@@ -621,26 +623,29 @@ a:hover, a:focus {
   margin-top: 30px; }
   .pagination__list {
     margin: auto; }
-  .pagination__link {
-    display: block;
+  .pagination__item {
     width: 42px;
     height: 42px;
     line-height: 42px;
     text-align: center;
     -webkit-border-radius: 100%;
             border-radius: 100%;
-    color: #696969;
     -webkit-transition: 0.2s ease;
     -o-transition: 0.2s ease;
     transition: 0.2s ease;
-    cursor: pointer;
     margin: 0 1px; }
-    .pagination__link:hover {
+    .pagination__item .pagination__link:hover {
+      -webkit-border-radius: 100%;
+              border-radius: 100%;
       background-color: #04B578;
       color: #ffffff; }
+  .pagination__link {
+    display: block;
+    color: #696969; }
   .pagination--active {
-    background-color: #04B578;
-    color: #ffffff; }
+    background-color: #04B578; }
+    .pagination--active .pagination__link {
+      color: #ffffff; }
   .pagination__linkDisable {
     display: block;
     width: 42px;
@@ -650,29 +655,55 @@ a:hover, a:focus {
     color: #696969;
     margin: 0 1px; }
 
-.loaderBlock {
-  display: none; }
-  .loaderBlock .loader {
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: fixed;
-    z-index: 99999999999999;
-    background-color: rgba(0, 0, 0, 0.5); }
-    .loaderBlock .loader img {
-      width: 40px;
-      height: 40px; }
+.loader {
+  display: none;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .loader img {
+    width: 40px;
+    height: 40px; }
+
+.overlay {
+  display: none;
+  position: absolute;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+  .overlay img {
+    width: 30px;
+    height: 30px; }
 
 .auth-banner {
   background-image: url(../img/log-banner-top.png);
@@ -1211,6 +1242,58 @@ a:hover, a:focus {
     line-height: 1.2;
     text-align: right;
     color: #929292; }
+
+.buySell .pagination {
+  margin-top: 20px; }
+
+.buySell__order__title {
+  font-size: 20px;
+  color: #01567A;
+  margin-bottom: 20px; }
+
+.buySell__order__subTitle {
+  text-align: center;
+  text-transform: uppercase;
+  color: dimgray;
+  margin-bottom: 20px; }
+
+.buySell__order__board .tbl {
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+  .buySell__order__board .tbl-head {
+    height: 40px;
+    color: #929292;
+    background-color: transparent;
+    text-transform: capitalize; }
+  .buySell__order__board .tbl-row {
+    color: #929292;
+    background-color: transparent; }
+  .buySell__order__board .tbl-th--30 {
+    padding-left: 60px; }
+
+.buySell__order__board__priceGreen {
+  color: #04b578; }
+
+.buySell__order__board__priceRed {
+  color: #e9677a; }
+
+.buySell__order__board__textRow {
+  margin-top: 15px;
+  color: #929292; }
+
+.buySell__transactions {
+  margin: 60px 0; }
+
+.buySell__tradeHistory {
+  margin-bottom: 68px; }
+
+.buySell__openOrders .tbl-row {
+  position: relative; }
+
+.buySell__openOrders__close {
+  position: absolute;
+  right: 15px;
+  cursor: pointer; }
 
 .deposit {
   margin-bottom: 50px; }
