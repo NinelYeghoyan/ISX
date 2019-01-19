@@ -1,0 +1,66 @@
+@import "_variables";
+.buySell{
+  .pagination{
+    margin-top: 20px;
+  }
+  //  order book
+  &__order{
+    &__title{
+      font-size: 20px;
+      color:  $blue;
+      margin-bottom: 20px;
+    }
+    &__subTitle{
+      text-align: center;
+      text-transform: uppercase;
+      color: rgb(105, 105, 105);
+      margin-bottom: 20px;
+    }
+    &__board{
+      .tbl{
+        border-radius: 3px;
+        &-head{
+          height: 40px;
+          color: rgb(146, 146, 146);
+          background-color: transparent;
+          text-transform: capitalize;
+        }
+        &-row{
+          color: rgb(146, 146, 146);
+          background-color: transparent;
+        }
+        &-th--30 {
+          padding-left: 60px;
+        }
+      }
+      &__priceGreen{
+        color: #04b578;
+      }
+      &__priceRed{
+        color: #e9677a;
+      }
+      &__textRow{
+        margin-top: 15px;
+        color: rgb(146, 146, 146);
+      }
+    }
+  }
+  // Latest transactions
+  &__transactions{
+    margin: 60px 0;
+  }
+  // trade history
+  &__tradeHistory{
+    margin-bottom: 68px;
+  }
+  &__openOrders{
+    .tbl-row{
+      position: relative;
+    }
+    &__close{
+      position: absolute;
+      right: 15px;
+      cursor: pointer;
+    }
+  }
+}
