@@ -55,9 +55,9 @@ $(document).ready(function () {
     });
     // loader for table
     $(".pagination__item").click(function() {
-        $(".pagination__item").removeClass("pagination--active");
+        $(this).parent().find(".pagination__item").removeClass("pagination--active");
         $(this).addClass("pagination--active");
-        $(".overlay").css("display", "flex");
+        $(this).parents(".tbl-pagination").find(".overlay").css("display", "flex");
         setTimeout(function(){
             $(".overlay").css("display", "none");
         }, 2000);
