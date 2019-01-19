@@ -172,7 +172,8 @@ a:hover, a:focus {
   .header__user .header__item:last-child {
     margin-right: 25px; }
   .header__userMail {
-    position: relative; }
+    position: relative;
+    z-index: 99; }
     .header__userMail__text {
       font-size: 14px;
       border-left: 1px solid #01567A;
@@ -619,6 +620,24 @@ a:hover, a:focus {
   .tbl-status {
     color: #01567A; }
 
+.tbl-mobile {
+  border: 1px solid #E7E9F0; }
+  .tbl-mobile__head {
+    font-size: 13px;
+    color: #01567A;
+    text-transform: uppercase; }
+  .tbl-mobile__text {
+    font-size: 13px;
+    color: #444444; }
+  .tbl-mobile__row {
+    height: 35px;
+    background-color: #fff;
+    color: #444444;
+    border-top: 1px solid #E7E9F0;
+    padding: 0 15px; }
+    .tbl-mobile__row:nth-child(even) {
+      background-color: #F7F9FF; }
+
 .pagination {
   margin-top: 30px; }
   .pagination__list {
@@ -650,7 +669,7 @@ a:hover, a:focus {
     display: block;
     width: 42px;
     height: 42px;
-    line-height: 42px;
+    line-height: 46px;
     text-align: center;
     color: #696969;
     margin: 0 1px; }
@@ -2099,3 +2118,95 @@ a:hover, a:focus {
     line-height: 27px;
     font-size: 12px;
     padding: 0 15px; } }
+
+@media screen and (max-width: 992px) {
+  .tbl-th--30 {
+    padding-left: 15px;
+    padding-right: 15px; }
+  .tbl-th--20 {
+    padding-left: 10px;
+    padding-right: 10px; }
+  /* ========== Withdraw ========== */
+  .colWidth {
+    width: 100%; }
+  .colLeft {
+    padding-right: 15px; }
+  .colRight {
+    padding-left: 15px; } }
+
+@media screen and (max-width: 767px) {
+  .header__userMail__text {
+    font-size: 13px;
+    padding-left: 15px; }
+  .header__user .header__item:last-child {
+    margin-right: 15px; }
+  .tbl__title {
+    font-size: 18px; }
+  .tbl-head {
+    height: 45px;
+    font-size: 13px; }
+  .tbl-row {
+    height: 35px;
+    font-size: 13px; }
+  /* ========== Withdraw ========== */
+  .withdraw .form-group ~ .form-group {
+    margin-top: 20px; }
+  .colRight {
+    border-left: 0;
+    margin-top: 30px; } }
+
+@media screen and (max-width: 576px) {
+  .header__userMail__text {
+    border-left: 0;
+    padding-left: 0; }
+  .header__user .header__item:last-child {
+    margin-right: 0; }
+  .tbl__title {
+    font-size: 16px; }
+  /* ========== Withdraw ========== */
+  .inside-header {
+    font-size: 22px;
+    margin-bottom: 20px; }
+  .withdraw .form-control,
+  .deposit .form-control,
+  .addresses .form-control,
+  .settings .form-control {
+    height: 40px !important;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  .drop__buttonBox {
+    height: 40px;
+    padding: 0 15px; }
+  .drop__link {
+    padding: 10px 15px; }
+  .withdraw__result__row {
+    margin-bottom: 10px; }
+  .withdraw__value {
+    font-size: 13px; }
+  .withdraw__text {
+    font-size: 13px; }
+  .withdraw__row {
+    margin-bottom: 5px; }
+  .withdraw__result {
+    margin-top: 20px;
+    margin-bottom: 25px; }
+  /* ========== Pagination ========== */
+  .pagination__item {
+    width: 35px;
+    height: 35px;
+    line-height: 35px; }
+  .pagination__linkDisable {
+    width: 35px;
+    height: 35px;
+    line-height: 40px; } }
+
+@media screen and (max-width: 380px) {
+  .pagination__item {
+    width: 30px;
+    height: 30px;
+    line-height: 30px; }
+  .pagination__linkDisable {
+    width: 30px;
+    height: 30px;
+    line-height: 35px; } }

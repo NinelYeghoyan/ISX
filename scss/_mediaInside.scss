@@ -1,0 +1,174 @@
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+  // Table style
+  .tbl-th--30 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .tbl-th--20 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* ========== Withdraw ========== */
+  .colWidth{
+    width: 100%;
+  }
+  .colLeft {
+    padding-right: 15px;
+  }
+  .colRight{
+    padding-left: 15px;
+  }
+
+
+}
+@media screen and (max-width: 767px) {
+  .header__userMail__text {
+    font-size: 13px;
+    padding-left: 15px;
+  }
+  .header__user{
+    .header__item:last-child {
+      margin-right: 15px;
+    }
+  }
+  // table style
+  .tbl__title {
+    font-size: 18px;
+  }
+  .tbl-head {
+    height: 45px;
+    font-size: 13px;
+  }
+  .tbl-row {
+    height: 35px;
+    font-size: 13px;
+  }
+  /* ========== Withdraw ========== */
+  .withdraw{
+    .form-group ~ .form-group {
+      margin-top: 20px;
+    }
+  }
+  .colRight{
+    border-left: 0;
+    margin-top: 30px;
+  }
+
+}
+@media screen and (max-width: 576px) {
+  .header__userMail__text{
+    border-left: 0;
+    padding-left: 0;
+  }
+  .header__user{
+    .header__item:last-child {
+      margin-right: 0;
+    }
+  }
+  // table style
+  .tbl__title {
+    font-size: 16px;
+  }
+  /* ========== Withdraw ========== */
+  .inside-header {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .withdraw .form-control,
+  .deposit .form-control,
+  .addresses .form-control,
+  .settings .form-control{
+    height: 40px!important;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .drop{
+    &__buttonBox {
+      height: 40px;
+      padding: 0 15px;
+    }
+    &__link {
+      padding: 10px 15px;
+    }
+  }
+  .withdraw{
+    &__result__row {
+      margin-bottom: 10px;
+    }
+    &__value{
+      font-size: 13px;
+    }
+    &__text{
+      font-size: 13px;
+    }
+    &__row {
+      margin-bottom: 5px;
+    }
+    &__result {
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
+  }
+  /* ========== Pagination ========== */
+  .pagination__item{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  .pagination__linkDisable {
+    width: 35px;
+    height: 35px;
+    line-height: 40px;
+  }
+
+}
+@media screen and (max-width: 380px) {
+  .pagination__item {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .pagination__linkDisable {
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 330px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

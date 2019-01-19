@@ -111,6 +111,7 @@
   }
   &__userMail{
     position: relative;
+    z-index: 99;
     &__text{
       font-size: 14px;
       border-left: 1px solid #01567A;
@@ -608,6 +609,29 @@
     color: $blue;
   }
 }
+// mobile table style
+.tbl-mobile{
+  border: 1px solid #E7E9F0;
+  &__head{
+    font-size: 13px;
+    color: $blue;
+    text-transform: uppercase;
+  }
+  &__text{
+    font-size: 13px;
+    color: #444444;
+  }
+  &__row{
+    height: 35px;
+    background-color: #fff;
+    color: #444444;
+    border-top: 1px solid #E7E9F0;
+    padding: 0 15px;
+    &:nth-child(even){
+      background-color: #F7F9FF;
+    }
+  }
+}
 // pagination style
 .pagination{
   margin-top: 30px;
@@ -644,7 +668,7 @@
     display: block;
     width: 42px;
     height: 42px;
-    line-height: 42px;
+    line-height: 46px;
     text-align: center;
     color: #696969;
     margin: 0 1px;
@@ -702,6 +726,7 @@
 @import "_settings";
 @import "_bootstrapStyle";
 @import "_media";
+@import "_mediaInside";
 
 
 
