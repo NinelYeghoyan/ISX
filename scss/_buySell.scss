@@ -11,6 +11,7 @@
       margin-bottom: 20px;
     }
     &__subTitle{
+      font-size: 16px;
       text-align: center;
       text-transform: uppercase;
       color: rgb(105, 105, 105);
@@ -34,10 +35,10 @@
         }
       }
       &__priceGreen{
-        color: #04b578;
+        color: #04b578!important;
       }
       &__priceRed{
-        color: #e9677a;
+        color: #e9677a!important;
       }
       &__textRow{
         margin-top: 15px;

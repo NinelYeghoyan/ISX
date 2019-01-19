@@ -59,6 +59,14 @@
     color: rgb(1, 86, 122);
   }
   &__text{
+    flex-grow: 1;
+    min-width: 1px;
+    font-size: 18px;
+    color: rgb(105, 105, 105);
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  &__date{
     font-size: 18px;
     color: rgb(105, 105, 105);
     margin-bottom: 10px;

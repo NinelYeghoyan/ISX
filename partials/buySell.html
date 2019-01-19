@@ -65,159 +65,195 @@
                 <section class="buySell__order">
                     <h3 class="buySell__order__title">Order Book</h3>
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="buySell__order__board">
-                                <h6 class="buySell__order__subTitle">Bids</h6>
-                                <!-- Bids table -->
-                                <div class="tbl">
-                                    <div class="tbl-head d-flex align-items-center">
-                                        <div class="tbl-th--30">amount</div>
-                                        <div class="tbl-th--30">Price</div>
-                                        <div class="tbl-th--30">total</div>
+                        <div class="buySell__order__board col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <h6 class="buySell__order__subTitle">Bids</h6>
+                            <!-- Bids table -->
+                            <div class="tbl">
+                                <div class="tbl-head d-flex align-items-center">
+                                    <div class="tbl-th--30">amount</div>
+                                    <div class="tbl-th--30">Price</div>
+                                    <div class="tbl-th--30">total</div>
+                                </div>
+                                <div class="tbl-body">
+                                    <div class="overlay">
+                                        <img src="../img/icons/loader.gif" alt="loader"/>
                                     </div>
-                                    <div class="tbl-body">
-                                        <div class="overlay">
-                                            <img src="../img/icons/loader.gif" alt="loader"/>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">0.1038</div>
-                                            <div class="tbl-th--30 buySell__order__board__priceGreen">0.00760004</div>
-                                            <div class="tbl-th--30">0.00760004</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">0.1038</div>
-                                            <div class="tbl-th--30 buySell__order__board__priceGreen">0.00760004</div>
-                                            <div class="tbl-th--30">0.00760004</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">0.1038</div>
-                                            <div class="tbl-th--30 buySell__order__board__priceGreen">0.00760004</div>
-                                            <div class="tbl-th--30">0.00760004</div>
-                                        </div>
+                                    <div class="tbl-row d-flex align-items-center">
+                                        <div class="tbl-th--30">0.1038</div>
+                                        <div class="tbl-th--30 buySell__order__board__priceGreen">0.00760004</div>
+                                        <div class="tbl-th--30">0.00760004</div>
+                                    </div>
+                                    <div class="tbl-row d-flex align-items-center">
+                                        <div class="tbl-th--30">0.1038</div>
+                                        <div class="tbl-th--30 buySell__order__board__priceGreen">0.00760004</div>
+                                        <div class="tbl-th--30">0.00760004</div>
+                                    </div>
+                                    <div class="tbl-row d-flex align-items-center">
+                                        <div class="tbl-th--30">0.1038</div>
+                                        <div class="tbl-th--30 buySell__order__board__priceGreen">0.00760004</div>
+                                        <div class="tbl-th--30">0.00760004</div>
                                     </div>
                                 </div>
-                                <div class="buySell__order__board__textRow d-flex align-items-center justify-content-between">
-                                    <p>590538.234 USD</p>
-                                    <p>39.050 BTC</p>
-                                </div>
-                                <!-- pagination -->
-                                <section class="pagination">
-                                    <div class="container">
-                                        <div class="row">
-                                            <ul class="pagination__list d-flex align-items-center">
-                                                <li class="pagination__item">
-                                                    <a class="pagination__linkDisable" href="#">
-                                                        <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
-                                                    </a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link" href="#">1</a>
-                                                </li>
-                                                <li class="pagination__item pagination--active">
-                                                    <a class="pagination__link" href="#">2</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link" href="#">3</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link" href="#">4</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link" href="#">5</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__linkDisable" href="#">...</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link" href="#">20</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__linkDisable" href="#">
-                                                        <img src="../img/icons/arrow-next.png" alt="arrow next"/>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </section>
                             </div>
+                            <!-- Bids Mobile table-->
+                            <div class="tbl-mobile-box">
+                                <div class="overlay">
+                                    <img src="../img/icons/loader.gif" alt="loader"/>
+                                </div>
+                                <div class="tbl-mobile">
+                                    <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                        <div class="tbl-mobile__head">amount</div>
+                                        <div class="tbl-mobile__text">0.1038</div>
+                                    </div>
+                                    <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                        <div class="tbl-mobile__head">price</div>
+                                        <div class="tbl-mobile__text buySell__order__board__priceGreen">0.00760004</div>
+                                    </div>
+                                    <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                        <div class="tbl-mobile__head">total</div>
+                                        <div class="tbl-mobile__text oe">0.00760004</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buySell__order__board__textRow d-flex align-items-center justify-content-between">
+                                <p class="buySell__order__board__text">590538.234 USD</p>
+                                <p class="buySell__order__board__text">39.050 BTC</p>
+                            </div>
+                            <!-- pagination -->
+                            <section class="pagination">
+                                <div class="container">
+                                    <div class="row">
+                                        <ul class="pagination__list d-flex align-items-center">
+                                            <li class="pagination__linkDisable">
+                                                <a href="#">
+                                                    <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                </a>
+                                            </li>
+                                            <li class="pagination__item">
+                                                <a class="pagination__link" href="#">1</a>
+                                            </li>
+                                            <li class="pagination__item pagination--active">
+                                                <a class="pagination__link" href="#">2</a>
+                                            </li>
+                                            <li class="pagination__item">
+                                                <a class="pagination__link" href="#">3</a>
+                                            </li>
+                                            <li class="pagination__item">
+                                                <a class="pagination__link" href="#">4</a>
+                                            </li>
+                                            <li class="pagination__item">
+                                                <a class="pagination__link" href="#">5</a>
+                                            </li>
+                                            <li class="">
+                                                <a class="pagination__linkDisable" href="#">...</a>
+                                            </li>
+                                            <li class="pagination__item">
+                                                <a class="pagination__link" href="#">20</a>
+                                            </li>
+                                            <li class="pagination__linkDisable">
+                                                <a href="#">
+                                                    <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
-                        <div class="col-md-6">
-                            <div class="buySell__order__board">
-                                <h6 class="buySell__order__subTitle">asks</h6>
-                                <!-- asks table -->
-                                <div class="tbl">
-                                    <div class="tbl-head d-flex align-items-center">
-                                        <div class="tbl-th--30">amount</div>
-                                        <div class="tbl-th--30">Price</div>
-                                        <div class="tbl-th--30">total</div>
+                        <div class="buySell__order__board col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <h6 class="buySell__order__subTitle">asks</h6>
+                            <!-- asks table -->
+                            <div class="tbl">
+                                <div class="tbl-head d-flex align-items-center">
+                                    <div class="tbl-th--30">amount</div>
+                                    <div class="tbl-th--30">Price</div>
+                                    <div class="tbl-th--30">total</div>
+                                </div>
+                                <div class="tbl-body">
+                                    <div class="overlay">
+                                        <img src="../img/icons/loader.gif" alt="loader"/>
                                     </div>
-                                    <div class="tbl-body">
-                                        <div class="overlay">
-                                            <img src="../img/icons/loader.gif" alt="loader"/>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">0.1038</div>
-                                            <div class="tbl-th--30 buySell__order__board__priceRed">0.00760004</div>
-                                            <div class="tbl-th--30">0.00760004</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">0.1038</div>
-                                            <div class="tbl-th--30 buySell__order__board__priceRed">0.00760004</div>
-                                            <div class="tbl-th--30">0.00760004</div>
-                                        </div>
-                                        <div class="tbl-row d-flex align-items-center">
-                                            <div class="tbl-th--30 oe">0.1038</div>
-                                            <div class="tbl-th--30 buySell__order__board__priceRed">0.00760004</div>
-                                            <div class="tbl-th--30">0.00760004</div>
-                                        </div>
+                                    <div class="tbl-row d-flex align-items-center">
+                                        <div class="tbl-th--30">0.1038</div>
+                                        <div class="tbl-th--30 buySell__order__board__priceRed">0.00760004</div>
+                                        <div class="tbl-th--30">0.00760004</div>
+                                    </div>
+                                    <div class="tbl-row d-flex align-items-center">
+                                        <div class="tbl-th--30">0.1038</div>
+                                        <div class="tbl-th--30 buySell__order__board__priceRed">0.00760004</div>
+                                        <div class="tbl-th--30">0.00760004</div>
+                                    </div>
+                                    <div class="tbl-row d-flex align-items-center">
+                                        <div class="tbl-th--30">0.1038</div>
+                                        <div class="tbl-th--30 buySell__order__board__priceRed">0.00760004</div>
+                                        <div class="tbl-th--30">0.00760004</div>
                                     </div>
                                 </div>
-                                <div class="buySell__order__board__textRow d-flex align-items-center justify-content-between">
-                                    <p>590538.234 BTC</p>
-                                    <p>39.050 USD</p>
-                                </div>
-                                <!-- pagination -->
-                                <section class="pagination">
-                                    <div class="container">
-                                        <div class="row">
-                                            <ul class="pagination__list d-flex align-items-center">
-                                                <li class="pagination__item">
-                                                    <a class="pagination__linkDisable" href="#">
-                                                        <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
-                                                    </a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link" href="#">1</a>
-                                                </li>
-                                                <li class="pagination__item pagination--active">
-                                                    <a class="pagination__link" href="#">2</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link" href="#">3</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link" href="#">4</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link" href="#">5</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__linkDisable" href="#">...</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__link" href="#">20</a>
-                                                </li>
-                                                <li class="pagination__item">
-                                                    <a class="pagination__linkDisable" href="#">
-                                                        <img src="../img/icons/arrow-next.png" alt="arrow next"/>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </section>
                             </div>
+                            <!-- asks Mobile table-->
+                            <div class="tbl-mobile-box">
+                                <div class="overlay">
+                                    <img src="../img/icons/loader.gif" alt="loader"/>
+                                </div>
+                                <div class="tbl-mobile">
+                                    <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                        <div class="tbl-mobile__head">amount</div>
+                                        <div class="tbl-mobile__text">0.1038</div>
+                                    </div>
+                                    <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                        <div class="tbl-mobile__head">price</div>
+                                        <div class="tbl-mobile__text buySell__order__board__priceRed">0.00760004</div>
+                                    </div>
+                                    <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                        <div class="tbl-mobile__head">total</div>
+                                        <div class="tbl-mobile__text oe">0.00760004</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="buySell__order__board__textRow d-flex align-items-center justify-content-between">
+                                <p class="buySell__order__board__text">590538.234 BTC</p>
+                                <p class="buySell__order__board__text">39.050 USD</p>
+                            </div>
+                            <!-- pagination -->
+                            <section class="pagination">
+                                <div class="container">
+                                    <div class="row">
+                                        <ul class="pagination__list d-flex align-items-center">
+                                            <li class="pagination__linkDisable">
+                                                <a href="#">
+                                                    <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
+                                                </a>
+                                            </li>
+                                            <li class="pagination__item">
+                                                <a class="pagination__link" href="#">1</a>
+                                            </li>
+                                            <li class="pagination__item pagination--active">
+                                                <a class="pagination__link" href="#">2</a>
+                                            </li>
+                                            <li class="pagination__item">
+                                                <a class="pagination__link" href="#">3</a>
+                                            </li>
+                                            <li class="pagination__item">
+                                                <a class="pagination__link" href="#">4</a>
+                                            </li>
+                                            <li class="pagination__item">
+                                                <a class="pagination__link" href="#">5</a>
+                                            </li>
+                                            <li class="">
+                                                <a class="pagination__linkDisable" href="#">...</a>
+                                            </li>
+                                            <li class="pagination__item">
+                                                <a class="pagination__link" href="#">20</a>
+                                            </li>
+                                            <li class="pagination__linkDisable">
+                                                <a href="#">
+                                                    <img src="../img/icons/arrow-next.png" alt="arrow next"/>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
                         </div>
                     </div>
                 </section>
@@ -225,6 +261,7 @@
                 <section class="buySell__transactions">
                     <h3 class="buySell__order__title">Latest transactions</h3>
                     <div class="tbl__container">
+                        <!-- table -->
                         <div class="tbl">
                             <div class="tbl-head d-flex align-items-center">
                                 <div class="tbl-th--30">Date</div>
@@ -238,72 +275,100 @@
                                     <img src="../img/icons/loader.gif" alt="loader"/>
                                 </div>
                                 <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--30">2 hours ago</div>
                                     <div class="tbl-th--20">Buy</div>
                                     <div class="tbl-th--20">0.00781450</div>
-                                    <div class="tbl-th--30 oe">86.20689655</div>
-                                    <div class="tbl-th--30 oe">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
                                 </div>
                                 <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30 oe">
+                                    <div class="tbl-th--30">
                                         <span>Apr 12, 2018,</span>
                                         <span>10:10</span>
                                     </div>
                                     <div class="tbl-th--20">Sell</div>
                                     <div class="tbl-th--20">0.00781450</div>
-                                    <div class="tbl-th--30 oe">86.20689655</div>
-                                    <div class="tbl-th--30 oe">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
                                 </div>
                                 <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--30">2 hours ago</div>
                                     <div class="tbl-th--20">Buy</div>
                                     <div class="tbl-th--20">0.00781450</div>
-                                    <div class="tbl-th--30 oe">86.20689655</div>
-                                    <div class="tbl-th--30 oe">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
                                 </div>
                                 <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30 oe">
+                                    <div class="tbl-th--30">
                                         <span>Apr 12, 2018,</span>
                                         <span>10:10</span>
                                     </div>
                                     <div class="tbl-th--20">Sell</div>
                                     <div class="tbl-th--20">0.00781450</div>
-                                    <div class="tbl-th--30 oe">86.20689655</div>
-                                    <div class="tbl-th--30 oe">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
                                 </div>
                                 <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--30">2 hours ago</div>
                                     <div class="tbl-th--20">Buy</div>
                                     <div class="tbl-th--20">0.00781450</div>
-                                    <div class="tbl-th--30 oe">86.20689655</div>
-                                    <div class="tbl-th--30 oe">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
                                 </div>
                                 <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30 oe">
+                                    <div class="tbl-th--30">
                                         <span>Apr 12, 2018,</span>
                                         <span>10:10</span>
                                     </div>
                                     <div class="tbl-th--20">Sell</div>
                                     <div class="tbl-th--20">0.00781450</div>
-                                    <div class="tbl-th--30 oe">86.20689655</div>
-                                    <div class="tbl-th--30 oe">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
                                 </div>
                                 <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30 oe">2 hours ago</div>
+                                    <div class="tbl-th--30">2 hours ago</div>
                                     <div class="tbl-th--20">Buy</div>
                                     <div class="tbl-th--20">0.00781450</div>
-                                    <div class="tbl-th--30 oe">86.20689655</div>
-                                    <div class="tbl-th--30 oe">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
                                 </div>
                                 <div class="tbl-row d-flex align-items-center">
-                                    <div class="tbl-th--30 oe">
+                                    <div class="tbl-th--30">
                                         <span>Apr 12, 2018,</span>
                                         <span>10:10</span>
                                     </div>
                                     <div class="tbl-th--20">Sell</div>
                                     <div class="tbl-th--20">0.00781450</div>
-                                    <div class="tbl-th--30 oe">86.20689655</div>
-                                    <div class="tbl-th--30 oe">0.00781450</div>
+                                    <div class="tbl-th--30">86.20689655</div>
+                                    <div class="tbl-th--30">0.00781450</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile table-->
+                        <div class="tbl-mobile-box">
+                            <div class="overlay">
+                                <img src="../img/icons/loader.gif" alt="loader"/>
+                            </div>
+                            <div class="tbl-mobile">
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">Date</div>
+                                    <div class="tbl-mobile__text">2 hours ago</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">Type</div>
+                                    <div class="tbl-mobile__text">Buy</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">Price</div>
+                                    <div class="tbl-mobile__text oe">0.00781450</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">total units(USD)</div>
+                                    <div class="tbl-mobile__text oe">86.20689655</div>
+                                </div>
+                                <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                    <div class="tbl-mobile__head">total cost(BTC)</div>
+                                    <div class="tbl-mobile__text oe">0.00781450</div>
                                 </div>
                             </div>
                         </div>
@@ -312,8 +377,8 @@
                             <div class="container">
                                 <div class="row">
                                     <ul class="pagination__list d-flex align-items-center">
-                                        <li class="pagination__item">
-                                            <a class="pagination__linkDisable" href="#">
+                                        <li class="pagination__linkDisable">
+                                            <a href="#">
                                                 <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
                                             </a>
                                         </li>
@@ -332,14 +397,14 @@
                                         <li class="pagination__item">
                                             <a class="pagination__link" href="#">5</a>
                                         </li>
-                                        <li class="pagination__item">
+                                        <li class="">
                                             <a class="pagination__linkDisable" href="#">...</a>
                                         </li>
                                         <li class="pagination__item">
                                             <a class="pagination__link" href="#">20</a>
                                         </li>
-                                        <li class="pagination__item">
-                                            <a class="pagination__linkDisable" href="#">
+                                        <li class="pagination__linkDisable">
+                                            <a href="#">
                                                 <img src="../img/icons/arrow-next.png" alt="arrow next"/>
                                             </a>
                                         </li>
@@ -351,7 +416,8 @@
                 </section>
                 <!-- My trade history -->
                 <section class="buySell__tradeHistory">
-                    <h3 class="buySell__order__title">Latest transactions</h3>
+                    <h3 class="buySell__order__title">My trade history</h3>
+                    <!-- table -->
                     <div class="tbl">
                         <div class="tbl-head d-flex align-items-center">
                             <div class="tbl-th--30">Date</div>
@@ -362,28 +428,81 @@
                         </div>
                         <div class="tbl-body">
                             <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">2 hours ago</div>
+                                <div class="tbl-th--30">2 hours ago</div>
                                 <div class="tbl-th--20">Buy</div>
                                 <div class="tbl-th--20">0.00781450</div>
-                                <div class="tbl-th--30 oe">86.20689655</div>
-                                <div class="tbl-th--30 oe">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
                             </div>
                             <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">
+                                <div class="tbl-th--30">
                                     <span>Apr 12, 2018,</span>
                                     <span>10:10</span>
                                 </div>
                                 <div class="tbl-th--20">Sell</div>
                                 <div class="tbl-th--20">0.00781450</div>
-                                <div class="tbl-th--30 oe">86.20689655</div>
-                                <div class="tbl-th--30 oe">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
                             </div>
                             <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">2 hours ago</div>
+                                <div class="tbl-th--30">2 hours ago</div>
                                 <div class="tbl-th--20">Buy</div>
                                 <div class="tbl-th--20">0.00781450</div>
-                                <div class="tbl-th--30 oe">86.20689655</div>
-                                <div class="tbl-th--30 oe">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile table-->
+                    <div class="tbl-mobile-box">
+                        <div class="overlay">
+                            <img src="../img/icons/loader.gif" alt="loader"/>
+                        </div>
+                        <div class="tbl-mobile">
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Date</div>
+                                <div class="tbl-mobile__text">2 hours ago</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Type</div>
+                                <div class="tbl-mobile__text">Buy</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Price</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total units(USD)</div>
+                                <div class="tbl-mobile__text oe">86.20689655</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total cost(BTC)</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                        </div>
+                        <div class="tbl-mobile">
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Date</div>
+                                <div class="tbl-mobile__text">
+                                    <span>Apr 12, 2018,</span>
+                                    <span>10:10</span>
+                                </div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Type</div>
+                                <div class="tbl-mobile__text">Buy</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Price</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total units(USD)</div>
+                                <div class="tbl-mobile__text oe">86.20689655</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total cost(BTC)</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
                             </div>
                         </div>
                     </div>
@@ -391,6 +510,7 @@
                 <!-- My open orders -->
                 <section class="buySell__openOrders">
                     <h3 class="buySell__order__title">My open orders</h3>
+                    <!-- table -->
                     <div class="tbl">
                         <div class="tbl-head d-flex align-items-center">
                             <div class="tbl-th--30">Date</div>
@@ -401,37 +521,97 @@
                         </div>
                         <div class="tbl-body">
                             <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">2 hours ago</div>
+                                <div class="tbl-th--30">2 hours ago</div>
                                 <div class="tbl-th--20">Buy</div>
                                 <div class="tbl-th--20">0.00781450</div>
-                                <div class="tbl-th--30 oe">86.20689655</div>
-                                <div class="tbl-th--30 oe">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
                                 <div class="buySell__openOrders__close">
                                     <img src="../img/icons/close.png" alt="close"/>
                                 </div>
                             </div>
                             <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">
+                                <div class="tbl-th--30">
                                     <span>Apr 12, 2018,</span>
                                     <span>10:10</span>
                                 </div>
                                 <div class="tbl-th--20">Sell</div>
                                 <div class="tbl-th--20">0.00781450</div>
-                                <div class="tbl-th--30 oe">86.20689655</div>
-                                <div class="tbl-th--30 oe">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
                                 <div class="buySell__openOrders__close">
                                     <img src="../img/icons/close.png" alt="close"/>
                                 </div>
                             </div>
                             <div class="tbl-row d-flex align-items-center">
-                                <div class="tbl-th--30 oe">2 hours ago</div>
+                                <div class="tbl-th--30">2 hours ago</div>
                                 <div class="tbl-th--20">Buy</div>
                                 <div class="tbl-th--20">0.00781450</div>
-                                <div class="tbl-th--30 oe">86.20689655</div>
-                                <div class="tbl-th--30 oe">0.00781450</div>
+                                <div class="tbl-th--30">86.20689655</div>
+                                <div class="tbl-th--30">0.00781450</div>
                                 <div class="buySell__openOrders__close">
                                     <img src="../img/icons/close.png" alt="close"/>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile table-->
+                    <div class="tbl-mobile-box">
+                        <div class="overlay">
+                            <img src="../img/icons/loader.gif" alt="loader"/>
+                        </div>
+                        <div class="tbl-mobile">
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="buySell__openOrders__close">
+                                    <img src="../img/icons/close.png" alt="close"/>
+                                </div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Date</div>
+                                <div class="tbl-mobile__text">2 hours ago</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Type</div>
+                                <div class="tbl-mobile__text">Buy</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Price</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total units(USD)</div>
+                                <div class="tbl-mobile__text oe">86.20689655</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total cost(BTC)</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                        </div>
+                        <div class="tbl-mobile">
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="buySell__openOrders__close">
+                                    <img src="../img/icons/close.png" alt="close"/>
+                                </div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Date</div>
+                                <div class="tbl-mobile__text">2 hours ago</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Type</div>
+                                <div class="tbl-mobile__text">Buy</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">Price</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total units(USD)</div>
+                                <div class="tbl-mobile__text oe">86.20689655</div>
+                            </div>
+                            <div class="tbl-mobile__row d-flex align-items-center justify-content-between">
+                                <div class="tbl-mobile__head">total cost(BTC)</div>
+                                <div class="tbl-mobile__text oe">0.00781450</div>
                             </div>
                         </div>
                     </div>

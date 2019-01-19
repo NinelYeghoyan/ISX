@@ -215,7 +215,7 @@
   }
   .button {
     height: 35px;
-    line-height: 33px;
+    line-height: 31px;
     font-size: 13px;
     padding: 0 20px;
   }
@@ -232,6 +232,22 @@
     &__btnItem{
       & ~ .header__btnItem {
         margin-left: 10px;
+      }
+    }
+    &__user{
+      .header__item{
+        &:last-child {
+          margin-right: 15px;
+        }
+      }
+    }
+    &__userMail{
+      &__list{
+        top: 35px;
+      }
+      &__text {
+        font-size: 13px;
+        padding-left: 15px;
       }
     }
   }
@@ -284,9 +300,6 @@
   .getStarted{
     &__title{
       margin-bottom: 10px;
-    }
-    .btnLight{
-      line-height: 33px;
     }
   }
   /* ========== About style ========== */
@@ -392,6 +405,25 @@
       padding: 20px 15px;
       & + .header__item {
         margin-left: 0;
+      }
+    }
+    &__user{
+      .header__item{
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    &__userMail{
+      &__text {
+        border-left: 0;
+        padding-left: 0;
+      }
+      &__list {
+        min-width: 150px;
+      }
+      &__link{
+        font-size: 13px;
       }
     }
   }

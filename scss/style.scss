@@ -571,6 +571,7 @@
   }
   &-head{
     height: 55px;
+    line-height: 1.2;
     border-top: 1px solid #E7E9F0;
     background-color: #EDF1FD;
     color: $blue;
@@ -598,10 +599,11 @@
   }
   &-row{
     height: 40px;
+    line-height: 1.2;
     background-color: #fff;
     color: #444444;
     border-top: 1px solid #E7E9F0;
-    &:nth-child(even){
+    &:nth-child(odd){
       background-color: #F7F9FF;
     }
   }
@@ -612,23 +614,34 @@
 // mobile table style
 .tbl-mobile{
   border: 1px solid #E7E9F0;
+  & ~ .tbl-mobile{
+    margin-top: 20px;
+  }
+  &-box{
+    display: none;
+    position: relative;
+  }
   &__head{
-    font-size: 13px;
     color: $blue;
     text-transform: uppercase;
   }
   &__text{
-    font-size: 13px;
+    flex-grow: 1;
+    min-width: 1px;
+    text-align: right;
     color: #444444;
+    margin-left: 15px;
   }
   &__row{
     height: 35px;
     background-color: #fff;
     color: #444444;
-    border-top: 1px solid #E7E9F0;
     padding: 0 15px;
-    &:nth-child(even){
+    &:nth-child(odd){
       background-color: #F7F9FF;
+    }
+    & ~ .tbl-mobile__row{
+      border-top: 1px solid #E7E9F0;
     }
   }
 }
