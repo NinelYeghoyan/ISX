@@ -30,6 +30,73 @@
     border-color: #dedede #dedede #fff;
   }
 }
+// dashboard balance
+.dashboard-balance{
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  margin-bottom: 35px;
+  &-md{
+    display: none;
+    border: 1px solid #dedede;
+    margin-bottom: 30px;
+    &__block{
+      padding: 10px;
+      & ~ .dashboard-balance-md__block{
+        border-top: 1px solid #dedede;
+      }
+    }
+    &__box{
+      flex-grow: 1;
+      min-width: 1px;
+      margin-left: 15px;
+    }
+    &__row{
+      margin-bottom: 5px;
+    }
+    img{
+      width: 35px;
+    }
+  }
+  &__head{
+    padding: 17px 0;
+  }
+  &__row{
+    padding: 15px 0;
+    border-top: 1px solid #dedede;
+  }
+  &__col_25{
+    width: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__box{
+    margin-left: 30px;
+  }
+  &__title{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+    margin-bottom: 12px;
+  }
+  &__text{
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(146, 146, 146);
+  }
+  &__value{
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    color: rgb(105, 105, 105);
+  }
+}
+
+
+
+
+
+
 // dashboard
 .dashboard{
   // dropdown style

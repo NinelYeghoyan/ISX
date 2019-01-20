@@ -1196,6 +1196,57 @@ a:hover, a:focus {
   color: #01567A;
   border-color: #dedede #dedede #fff; }
 
+.dashboard-balance {
+  border: 1px solid #dedede;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  margin-bottom: 35px; }
+  .dashboard-balance-md {
+    display: none;
+    border: 1px solid #dedede;
+    margin-bottom: 30px; }
+    .dashboard-balance-md__block {
+      padding: 10px; }
+      .dashboard-balance-md__block ~ .dashboard-balance-md__block {
+        border-top: 1px solid #dedede; }
+    .dashboard-balance-md__box {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      min-width: 1px;
+      margin-left: 15px; }
+    .dashboard-balance-md__row {
+      margin-bottom: 5px; }
+    .dashboard-balance-md img {
+      width: 35px; }
+  .dashboard-balance__head {
+    padding: 17px 0; }
+  .dashboard-balance__row {
+    padding: 15px 0;
+    border-top: 1px solid #dedede; }
+  .dashboard-balance__col_25 {
+    width: 25%;
+    padding-left: 20px;
+    padding-right: 20px; }
+  .dashboard-balance__box {
+    margin-left: 30px; }
+  .dashboard-balance__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: dimgray;
+    margin-bottom: 12px; }
+  .dashboard-balance__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #929292; }
+  .dashboard-balance__value {
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    color: dimgray; }
+
 .dashboard .drop__buttonBox {
   height: 100%;
   border: none; }
@@ -1339,6 +1390,87 @@ a:hover, a:focus {
   right: 15px;
   cursor: pointer; }
 
+.buySell__limit {
+  margin-bottom: 65px; }
+  .buySell__limit__box {
+    border: 1px solid #dedede;
+    padding: 30px 20px;
+    margin: 0 10px; }
+    .buySell__limit__box__row {
+      margin-bottom: 15px; }
+    .buySell__limit__box__title {
+      font-size: 15px;
+      color: dimgray; }
+    .buySell__limit__box__text {
+      color: dimgray; }
+    .buySell__limit__box__value {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #929292;
+      margin-left: 10px; }
+    .buySell__limit__box .custom-checkbox {
+      margin-bottom: 18px; }
+  .buySell__limit__row {
+    margin-bottom: 20px; }
+  .buySell__limit__title {
+    font-size: 15px;
+    color: #929292; }
+  .buySell__limit__value {
+    color: dimgray; }
+  .buySell__limit__inputRow {
+    position: relative; }
+  .buySell__limit__input {
+    height: 45px;
+    font-size: 15px;
+    color: dimgray;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 60px; }
+  .buySell__limit__btn {
+    font-size: 12px;
+    border: none;
+    background-color: transparent;
+    color: #04b578;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    padding: 0;
+    cursor: pointer; }
+
+.buySell__charters {
+  margin-bottom: 65px; }
+  .buySell__charters .drop__parent {
+    width: 190px;
+    margin-bottom: 50px; }
+  .buySell__charters .drop__button {
+    color: #01567a; }
+  .buySell__charters .drop__list {
+    width: 190px; }
+  .buySell__charters__statistic {
+    padding-right: 20px; }
+    .buySell__charters__statistic__row ~ .buySell__charters__statistic__row {
+      margin-top: 15px; }
+    .buySell__charters__statistic__title {
+      text-transform: uppercase;
+      color: dimgray; }
+    .buySell__charters__statistic__text {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      min-width: 1px;
+      color: #929292;
+      text-align: right;
+      margin-left: 10px; }
+    .buySell__charters__statistic__textGreen {
+      color: #04b578; }
+    .buySell__charters__statistic__textRed {
+      color: #ff5b91; }
+    .buySell__charters__statistic__value {
+      font-size: 12px;
+      color: #929292;
+      margin-left: 10px; }
+
 .deposit {
   margin-bottom: 50px; }
   .deposit__formGroup {
@@ -1378,12 +1510,6 @@ a:hover, a:focus {
     margin: auto; }
     .deposit__barCode img {
       width: 100%; }
-
-.deposit-history .tbl__title {
-  font-weight: bold; }
-
-.deposit-history .tbl-head {
-  font-weight: bold; }
 
 .inside-header {
   font-size: 25px;
@@ -1553,60 +1679,60 @@ a:hover, a:focus {
   padding-top: 40px;
   margin-top: 70px; }
 
-.history__header {
-  margin-bottom: 20px; }
-
-.history__drop {
-  margin-top: -20px; }
-
-.history .tbl__title {
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: capitalize;
-  margin-bottom: 0; }
-
-.history .history-transactions .tbl-th--15,
-.history .history-order .tbl-th--15 {
-  width: 15%;
-  padding-left: 30px;
-  padding-right: 10px; }
-
-.history .history-transactions .tbl-th--20,
-.history .history-order .tbl-th--20 {
-  width: 20%;
-  padding-left: 30px;
-  padding-right: 10px; }
-
-.history .history-transactions .tbl-th--30,
-.history .history-order .tbl-th--30 {
-  width: 30%;
-  padding-left: 30px;
-  padding-right: 10px; }
-
-.history .history-login .tbl-th--15 {
-  width: 15%;
-  padding-left: 60px;
-  padding-right: 60px; }
-
-.history .history-login .tbl-th--20 {
-  width: 20%;
-  padding-left: 60px;
-  padding-right: 60px; }
-
-.history .history-login .tbl-th--30 {
-  width: 30%;
-  padding-left: 60px;
-  padding-right: 60px; }
-
-.history-order, .history-login, .history-request {
-  display: none; }
-
-.history .drop {
-  min-width: 185px; }
-  .history .drop__buttonBox {
-    padding: 0 30px; }
-  .history .drop__link {
-    padding: 15px 30px; }
+.history {
+  /* .history-login{
+    .tbl{
+      &-th{
+        &--15{
+          width: 15%;
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+        &--20{
+          width: 20%;
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+        &--30{
+          width: 30%;
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+      }
+    }
+  }*/ }
+  .history__header {
+    margin-bottom: 20px; }
+  .history__drop {
+    margin-top: -20px; }
+  .history .tbl__title {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 0; }
+  .history .history-transactions .tbl-th--15,
+  .history .history-order .tbl-th--15 {
+    width: 15%;
+    padding-left: 30px;
+    padding-right: 10px; }
+  .history .history-transactions .tbl-th--20,
+  .history .history-order .tbl-th--20 {
+    width: 20%;
+    padding-left: 30px;
+    padding-right: 10px; }
+  .history .history-transactions .tbl-th--30,
+  .history .history-order .tbl-th--30 {
+    width: 30%;
+    padding-left: 30px;
+    padding-right: 10px; }
+  .history-order, .history-login, .history-request {
+    display: none; }
+  .history .drop {
+    min-width: 185px; }
+    .history .drop__buttonBox {
+      padding: 0 30px; }
+    .history .drop__link {
+      padding: 15px 30px; }
 
 .settings .colLeft {
   padding-right: 30px; }
@@ -2179,7 +2305,18 @@ a:hover, a:focus {
   .addresses-account__title {
     margin-bottom: 15px; }
   .addresses-account__info {
-    font-size: 16px; } }
+    font-size: 16px; }
+  /* ========== dashboard tab ========== */
+  .dashboard-balance__value {
+    font-size: 16px; }
+  .dashboard-balance__title {
+    font-size: 16px;
+    margin-bottom: 10px; }
+  .dashboard-balance__box {
+    margin-left: 15px; }
+  .dashboard-balance__col_25 {
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 @media screen and (max-width: 992px) {
   .colWidth {
@@ -2299,7 +2436,13 @@ a:hover, a:focus {
   .settings .colWidth {
     width: 100%; }
   .settings .colLeft {
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  /* ========== buySell ========== */
+  .buySell__limit__box {
+    margin: 0; }
+  .buySell__charters__statistic {
+    padding-right: 0;
+    margin-bottom: 60px; } }
 
 @media screen and (max-width: 767px) {
   .colRight {
@@ -2336,6 +2479,17 @@ a:hover, a:focus {
     padding: 15px 10px; }
   .dashboard__announceRow {
     padding: 10px; }
+  .dashboard-balance__value {
+    font-size: 13px; }
+  .dashboard-balance__box {
+    margin-left: 10px; }
+  .dashboard-balance__title {
+    font-size: 13px;
+    margin-bottom: 5px; }
+  .dashboard-balance__text {
+    font-size: 12px; }
+  .dashboard-balance__col_25 img {
+    width: 40px; }
   /* ========== addresses tab ========== */
   .addresses__add__list {
     min-width: 300px;
@@ -2349,7 +2503,11 @@ a:hover, a:focus {
     padding-top: 40px;
     margin-top: 40px; }
   .settings__API .settings__btnRow {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  /* ========== buySell ========== */
+  .buySell__limit__box {
+    margin: 0;
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 576px) {
   .inside-header {
@@ -2432,6 +2590,10 @@ a:hover, a:focus {
   .main__child .nav-link {
     font-size: 13px; }
   /* ========== Dashboard ========== */
+  .dashboard-balance {
+    display: none; }
+    .dashboard-balance-md {
+      display: block; }
   .dashboard__date, .dashboard__text {
     font-size: 13px; }
   .dashboard__row {
@@ -2493,7 +2655,30 @@ a:hover, a:focus {
     padding-right: 15px; }
   .settings__doubleBorder {
     padding-top: 25px;
-    margin-top: 25px; } }
+    margin-top: 25px; }
+  /* ========== buySell ========== */
+  .buySell__limit {
+    margin-bottom: 25px; }
+    .buySell__limit__row {
+      margin-bottom: 5px; }
+    .buySell__limit__box {
+      padding: 15px; }
+      .buySell__limit__box__row {
+        margin-bottom: 5px; }
+      .buySell__limit__box__value {
+        margin-left: 5px; }
+    .buySell__limit__input {
+      height: 40px;
+      font-size: 13px;
+      margin-bottom: 10px; }
+  .buySell__charters .drop__parent {
+    margin-bottom: 30px; }
+  .buySell__charters__statistic {
+    margin-bottom: 30px; }
+    .buySell__charters__statistic__value {
+      margin-left: 5px; }
+    .buySell__charters__statistic__row ~ .buySell__charters__statistic__row {
+      margin-top: 10px; } }
 
 @media screen and (max-width: 380px) {
   /* ========== Pagination ========== */

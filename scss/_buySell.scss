@@ -1,67 +1,197 @@
 @import "_variables";
-.buySell{
-  .pagination{
+.buySell {
+  .pagination {
     margin-top: 20px;
   }
   //  order book
-  &__order{
-    &__title{
+  &__order {
+    &__title {
       font-size: 20px;
-      color:  $blue;
+      color: $blue;
       margin-bottom: 20px;
     }
-    &__subTitle{
+
+    &__subTitle {
       font-size: 16px;
       text-align: center;
       text-transform: uppercase;
       color: rgb(105, 105, 105);
       margin-bottom: 20px;
     }
-    &__board{
-      .tbl{
+
+    &__board {
+      .tbl {
         border-radius: 3px;
-        &-head{
+
+        &-head {
           height: 40px;
           color: rgb(146, 146, 146);
           background-color: transparent;
           text-transform: capitalize;
         }
-        &-row{
+
+        &-row {
           color: rgb(146, 146, 146);
           background-color: transparent;
         }
+
         &-th--30 {
           padding-left: 60px;
         }
       }
-      &__priceGreen{
-        color: #04b578!important;
+
+      &__priceGreen {
+        color: #04b578 !important;
       }
-      &__priceRed{
-        color: #e9677a!important;
+
+      &__priceRed {
+        color: #e9677a !important;
       }
-      &__textRow{
+
+      &__textRow {
         margin-top: 15px;
         color: rgb(146, 146, 146);
       }
     }
   }
   // Latest transactions
-  &__transactions{
+  &__transactions {
     margin: 60px 0;
   }
   // trade history
-  &__tradeHistory{
+  &__tradeHistory {
     margin-bottom: 68px;
   }
-  &__openOrders{
-    .tbl-row{
+  &__openOrders {
+    .tbl-row {
       position: relative;
     }
-    &__close{
+
+    &__close {
       position: absolute;
       right: 15px;
       cursor: pointer;
     }
   }
+  // buySell limit and market
+  &__limit {
+    margin-bottom: 65px;
+
+    &__box {
+      border: 1px solid #dedede;
+      padding: 30px 20px;
+      margin: 0 10px;
+      &__row {
+        margin-bottom: 15px;
+      }
+      &__title {
+        font-size: 15px;
+        color: rgb(105, 105, 105);
+      }
+      &__text {
+        color: rgb(105, 105, 105);
+      }
+      &__value {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: rgb(146, 146, 146);
+        margin-left: 10px;
+      }
+      .custom-checkbox {
+        margin-bottom: 18px;
+      }
+    }
+    &__row {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 15px;
+      color: rgb(146, 146, 146);
+    }
+    &__value {
+      color: rgb(105, 105, 105);
+    }
+    &__inputRow {
+      position: relative;
+    }
+    &__input {
+      height: 45px;
+      font-size: 15px;
+      color: rgb(105, 105, 105);
+      margin-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 60px;
+    }
+    &__btn {
+      font-size: 12px;
+      border: none;
+      background-color: transparent;
+      color: rgb(4, 181, 120);
+      position: absolute;
+      top: 17px;
+      right: 20px;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+  // charters
+  &__charters {
+    margin-bottom: 65px;
+    .drop__parent {
+      width: 190px;
+      margin-bottom: 50px;
+    }
+    .drop__button {
+      color: rgb(1, 86, 122);
+    }
+    .drop__list {
+      width: 190px;
+    }
+    &__statistic{
+      padding-right: 20px;
+      &__row{
+        & ~ .buySell__charters__statistic__row{
+          margin-top: 15px;
+        }
+      }
+      &__title {
+        text-transform: uppercase;
+        color: rgb(105, 105, 105);
+      }
+      &__text{
+        flex-grow: 1;
+        min-width: 1px;
+        color: rgb(146, 146, 146);
+        text-align: right;
+        margin-left: 10px;
+      }
+      &__textGreen{
+        color: rgb(4, 181, 120);
+      }
+      &__textRed{
+        color: rgb(255, 91, 145);
+      }
+      &__value{
+        font-size: 12px;
+        color: rgb(146, 146, 146);
+        margin-left: 10px;
+      }
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

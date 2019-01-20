@@ -32,6 +32,23 @@
       }
     }
   }
+  /* ========== dashboard tab ========== */
+  .dashboard-balance{
+    &__value{
+      font-size: 16px;
+    }
+    &__title {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    &__box {
+      margin-left: 15px;
+    }
+    &__col_25 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
 }
 @media screen and (max-width: 992px) {
   .colWidth{
@@ -194,6 +211,20 @@
       padding-right: 15px;
     }
   }
+  /* ========== buySell ========== */
+  .buySell{
+    &__limit{
+      &__box{
+        margin: 0;
+      }
+    }
+    &__charters{
+      &__statistic{
+        padding-right: 0;
+        margin-bottom: 60px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 767px) {
   .colRight {
@@ -259,6 +290,28 @@
     &__announceRow{
       padding: 10px;
     }
+    &-balance{
+      &__value {
+        font-size: 13px;
+      }
+    }
+    &-balance{
+      &__box {
+        margin-left: 10px;
+      }
+      &__title {
+        font-size: 13px;
+        margin-bottom: 5px;
+      }
+      &__text{
+        font-size: 12px;
+      }
+      &__col_25{
+        img{
+          width: 40px;
+        }
+      }
+    }
   }
   /* ========== addresses tab ========== */
   .addresses{
@@ -285,6 +338,11 @@
         margin-top: 40px;
       }
     }
+  }
+  /* ========== buySell ========== */
+  .buySell__limit__box{
+    margin: 0;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -412,6 +470,12 @@
   }
   /* ========== Dashboard ========== */
   .dashboard{
+    &-balance{
+      display: none;
+      &-md{
+        display: block;
+      }
+    }
     &__date,
     &__text{
       font-size: 13px;
@@ -515,6 +579,50 @@
     &__doubleBorder{
       padding-top: 25px;
       margin-top: 25px;
+    }
+  }
+  /* ========== buySell ========== */
+  .buySell {
+    &__limit {
+      margin-bottom: 25px;
+
+      &__row {
+        margin-bottom: 5px;
+      }
+
+      &__box {
+        padding: 15px;
+
+        &__row {
+          margin-bottom: 5px;
+        }
+
+        &__value {
+          margin-left: 5px;
+        }
+      }
+
+      &__input {
+        height: 40px;
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+    }
+    &__charters {
+      .drop__parent {
+        margin-bottom: 30px;
+      }
+      &__statistic {
+        margin-bottom: 30px;
+        &__value {
+          margin-left: 5px;
+        }
+        &__row {
+          & ~ .buySell__charters__statistic__row {
+            margin-top: 10px;
+          }
+        }
+      }
     }
   }
 }
