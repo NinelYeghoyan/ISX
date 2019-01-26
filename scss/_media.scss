@@ -568,14 +568,6 @@
     &__col{
       margin-bottom: 10px;
     }
-    input{
-      height: 40px;
-      font-size: 13px;
-    }
-    textarea {
-      min-height: 110px;
-      font-size: 13px;
-    }
   }
   // contact info
   .contact-info{
@@ -618,18 +610,11 @@
   .auth{
     &-banner{
       background-image: none;
-      .form-control {
-        height: 40px;
-        font-size: 13px;
-      }
       .custom-control-label{
         margin-top: 5px;
       }
       .auth__form{
         margin: 20px auto auto auto;
-        .form-group {
-          margin-bottom: 10px;
-        }
       }
     }
     &-banner-2 {

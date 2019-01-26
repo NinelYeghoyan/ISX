@@ -14,10 +14,10 @@ $(document).ready(function () {
         $(this).find("img").toggleClass("drop__rotate");
     });
     // dropdown select item
-    $(".drop__parent .drop__item").click(function() {
+    $(".drop .drop__item").click(function() {
         let txt = $(this).text();
-        $(this).parents(".drop__parent").find(".drop__button").text(txt);
-        $(this).parents(".drop__parent").find(".drop__item").removeClass("drop__none");
+        $(this).parents(".drop").find(".drop__value").text(txt);
+        $(this).parents(".drop").find(".drop__item").removeClass("drop__none");
         $(this).addClass("drop__none");
     });
     // history dropdown option
@@ -54,12 +54,12 @@ $(document).ready(function () {
         }, 2000);
     });
     // loader for table
-    $(".pagination__item").click(function() {
-        $(this).parent().find(".pagination__item").removeClass("pagination--active");
+    $(".pagination__link").click(function() {
+        $(this).parent().find(".pagination__link").removeClass("pagination--active");
         $(this).addClass("pagination--active");
-        $(this).parents(".tbl-pagination").find(".overlay").css("display", "flex");
+        $(this).parents(".table-pagination").find(".overlay-md").css("display", "flex");
         setTimeout(function(){
-            $(".overlay").css("display", "none");
+            $(".overlay-md").css("display", "none");
         }, 2000);
     });
 });

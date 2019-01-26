@@ -1,14 +1,5 @@
 @import "_variables";
 .settings{
-  .colLeft{
-    padding-right: 30px;
-  }
-  .colRight{
-    padding-left: 0;
-  }
-  .colWidth{
-    width: 390px;
-  }
   &__title{
     font-size: 18px;
     color: rgb(105, 105, 105);
@@ -28,32 +19,29 @@
       line-height: 1.375;
     }
   }
-  &__border{
-    border-top: 1px solid #dedede;
-    margin-top: 40px;
-    padding-top: 40px;
-  }
-  &__API{
-    .settings__link{
-      text-decoration: underline;
-    }
-    .settings__btnRow{
-      margin-top: 18px;
-    }
-  }
-  &__generateText{
-    display: none;
-    margin-top: 30px;
-  }
-  &__form{
-    margin-top: 28px;
-  }
   &__link{
     color: rgb(105, 105, 105);
     line-height: 1.375;
   }
   &__btnRow{
     margin-top: 40px;
+  }
+  &__generateText{
+    display: none;
+    margin-top: 30px;
+  }
+  &__API{
+    .settings__link{
+      text-decoration: underline;
+    }
+  }
+  &__border{
+    border-top: 1px solid #dedede;
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+  &__form {
+    margin-top: 28px;
   }
   // switcher style
   .checkbox.switcher{
@@ -98,42 +86,21 @@
       }
     }
   }
+  // padding remove and style
+  .colWidth{
+    width: 390px;
+  }
+  .padding--left{
+    padding-left: 55px;
+  }
+  .padding--right{
+    padding-right: 55px;
+  }
+  .delete-padding--right{
+    padding-right: 0;
+  }
+  .delete-padding--left{
+    padding-left: 0;
+    border-left: 1px solid #dedede;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

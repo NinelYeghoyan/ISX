@@ -7,9 +7,6 @@
 // contact form style
 .contact-form{
   padding: 60px 0 40px 0;
-  &__col{
-    margin-bottom: 20px;
-  }
   &__title{
     font-size: 20px;
     text-align: center;
@@ -24,12 +21,6 @@
   }
   &__span{
     display: block;
-  }
-  input{
-    height: 45px;
-  }
-  textarea{
-    min-height: 130px;
   }
 }
 // contact info style

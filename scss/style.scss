@@ -7,45 +7,6 @@
   font-weight: normal;
   background-color: $white;
 }
-.main{
-  padding-top: 80px;
-  &__child{
-    margin-top: 40px;
-    margin-bottom: 70px;
-  }
-}
-.oe{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.button{
-  display: inline-flex;
-  align-items: center;
-  height: 45px;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 3px;
-  border: 2px solid $blue;
-  background-color: $blue;
-  color: $white;
-  padding: 0 30px;
-  transition: .2s;
-  cursor: pointer;
-  &:hover{
-    background-color: transparent;
-    color: $blue;
-  }
-}
-.btnLight{
-  border: 2px solid $blue;
-  background-color: transparent;
-  color: $blue;
-  &:hover{
-    background-color: $blue;
-    color: $white;
-  }
-}
 // header style
 .header{
   height: 80px;
@@ -100,9 +61,6 @@
     }
   }
   &__user{
-    .header__link{
-      color: rgb(97, 97, 97);
-    }
     .header__item{
       &:last-child{
         margin-right: 25px;
@@ -114,8 +72,8 @@
     z-index: 99;
     &__text{
       font-size: 14px;
-      border-left: 1px solid #01567A;
-      color: rgb(97, 97, 97);
+      border-left: 1px solid #dedede;
+      color: #8b8b8b;
       padding-left: 20px;
       cursor: pointer;
     }
@@ -507,221 +465,8 @@
     }
   }
 }
-// dropdown style
-.drop{
-  position: relative;
-  &__parent{
 
-  }
-  &__buttonBox{
-    height: 45px;
-    padding: 0 20px;
-    border: 1px solid rgb(222, 222, 222);
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  &__button{
-    color: #696969;
-  }
-  &__list{
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    background-color: #fff;
-    box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
-    border: 1px solid rgb(222, 222, 222);
-    border-top: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  &__item{
-    transition: .2s ease;
-    &:hover{
-      background-color: #F5F9FF;
-    }
-  }
-  &__link{
-    display: block;
-    color: #696969;
-    padding: 15px 20px;
-  }
-  &__rotate{
-    transition: .2s ease;
-    transform: rotate(-180deg);
-  }
-  &__none{
-    display: none;
-  }
-}
-// table style
-.tbl{
-  font-size: 15px;
-  border: 1px solid #E7E9F0;
-  border-top: none;
-  &__container{
-    max-width: 1187px;
-    margin: auto;
-  }
-  &__title{
-    font-size: 20px;
-    color: $blue;
-    margin-bottom: 16px;
-  }
-  &-head{
-    height: 55px;
-    line-height: 1.2;
-    border-top: 1px solid #E7E9F0;
-    background-color: #EDF1FD;
-    color: $blue;
-    text-transform: uppercase;
-  }
-  &-body{
-    position: relative;
-  }
-  &-th{
-    &--15{
-      width: 15%;
-      padding-left: 50px;
-      padding-right: 34px;
-    }
-    &--20{
-      width: 20%;
-      padding-left: 50px;
-      padding-right: 34px;
-    }
-    &--30{
-      width: 30%;
-      padding-left: 50px;
-      padding-right: 34px;
-    }
-  }
-  &-row{
-    height: 40px;
-    line-height: 1.2;
-    background-color: #fff;
-    color: #444444;
-    border-top: 1px solid #E7E9F0;
-    &:nth-child(odd){
-      background-color: #F7F9FF;
-    }
-  }
-  &-status{
-    color: $blue;
-  }
-}
-// mobile table style
-.tbl-mobile{
-  border: 1px solid #E7E9F0;
-  & ~ .tbl-mobile{
-    margin-top: 20px;
-  }
-  &-box{
-    display: none;
-    position: relative;
-  }
-  &__head{
-    color: $blue;
-    text-transform: uppercase;
-  }
-  &__text{
-    flex-grow: 1;
-    min-width: 1px;
-    text-align: right;
-    color: #444444;
-    margin-left: 15px;
-  }
-  &__row{
-    height: 35px;
-    background-color: #fff;
-    color: #444444;
-    padding: 0 15px;
-    &:nth-child(odd){
-      background-color: #F7F9FF;
-    }
-    & ~ .tbl-mobile__row{
-      border-top: 1px solid #E7E9F0;
-    }
-  }
-}
-// pagination style
-.pagination{
-  margin-top: 30px;
-  &__list{
-    margin: auto;
-  }
-  &__item{
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    text-align: center;
-    border-radius: 100%;
-    transition: 0.2s ease;
-    margin: 0 1px;
-    .pagination__link{
-      &:hover{
-        border-radius: 100%;
-        background-color: #04B578;
-        color: $white;
-      }
-    }
-  }
-  &__link{
-    display: block;
-    color: #696969;
-  }
-  &--active{
-    background-color: #04B578;
-    .pagination__link{
-      color: $white;
-    }
-  }
-  &__linkDisable{
-    display: block;
-    width: 42px;
-    height: 42px;
-    line-height: 46px;
-    text-align: center;
-    color: #696969;
-    margin: 0 1px;
-  }
-}
-// loader
-.loader{
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 9;
-  background-color: rgba(0, 0, 0, 0.5);
-  user-select: none;
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-.overlay{
-  display: none;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 9;
-  background-color: rgba(0, 0, 0, 0.5);
-  user-select: none;
-  img{
-    width: 30px;
-    height: 30px;
-  }
-}
+
 // import files
 @import "_auth";
 @import "_about";
@@ -730,6 +475,7 @@
 @import "_announcement";
 @import "_terms";
 // inside pages
+@import "_global";
 @import "_dashboard";
 @import "_buySell";
 @import "_deposit";
@@ -738,8 +484,10 @@
 @import "_history";
 @import "_settings";
 @import "_bootstrapStyle";
+// media
 @import "_media";
 @import "_mediaInside";
+@import "_globalMedia";
 
 
 

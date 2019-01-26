@@ -1,148 +1,87 @@
 @media screen and (max-width: 1200px) {
-  /* ========== Table ========== */
-  .tbl{
-    &__container{
-      max-width: 100%;
-    }
-  }
-  /* ========== Buy/Sell ========== */
-  .buySell__order__board{
-    .tbl-th--30 {
-      padding-left: 50px;
-    }
-  }
-  /* ========== history tab ========== */
-  .history{
-    .history-login{
-      .tbl-th--30,
-      .tbl-th--20{
-        padding-left: 30px;
+  /* ========== dashboard tab ========== */
+  .dashboard {
+    // dashboard balance
+    &__balance {
+      &__col25 {
+        padding-left: 10px;
         padding-right: 10px;
+      }
+      &__box {
+        margin-left: 15px;
+      }
+      &__title {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      &__value {
+        font-size: 16px;
       }
     }
   }
   /* ========== addresses tab ========== */
   .addresses{
-    &-account{
+    // addresses account
+    &__account{
+      &__row{
+        padding: 20px 15px;
+      }
       &__title{
-        margin-bottom: 15px;
+        margin-bottom: 10px;
       }
       &__info{
         font-size: 16px;
       }
     }
   }
-  /* ========== dashboard tab ========== */
-  .dashboard-balance{
-    &__value{
-      font-size: 16px;
-    }
-    &__title {
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-    &__box {
-      margin-left: 15px;
-    }
-    &__col_25 {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
 }
 @media screen and (max-width: 992px) {
-  .colWidth{
-    width: 100%;
-  }
-  .colLeft {
-    padding-right: 15px;
-  }
-  .colRight{
-    padding-left: 15px;
-  }
-  /* ========== Table ========== */
-  .tbl{
-    &-head {
-      height: 45px;
-      font-size: 13px;
-    }
-    &__title {
-      font-size: 18px;
-    }
-    &-row {
-      height: 35px;
-      font-size: 13px;
-    }
-    &-th--30 {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-    &-th--20 {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-  /* ========== Pagination ========== */
-  .pagination{
-    &__item{
-      width: 35px;
-      height: 35px;
-      line-height: 35px;
-    }
-    &__link{
-      font-size: 13px;
-    }
-    &__linkDisable {
-      width: 35px;
-      height: 35px;
-      line-height: 40px;
-    }
-  }
   /* ========== Buy/Sell ========== */
   .buySell{
-    &__order{
-      &__board{
-        &:first-child{
-          margin-bottom: 30px;
-        }
-        .tbl{
-          display: block;
-          &-th--30 {
-            padding-left: 15px;
-          }
-        }
-        .tbl-mobile-box{
-          display: none;
-        }
-        &__text{
-          font-size: 13px;
-        }
+    // order book
+    &__orderBook{
+      &__row{
+        font-size: 13px;
       }
     }
-  }
-  /* ========== Dashboard ========== */
-  .dashboard{
-    &__date,
-    &__text{
-      font-size: 16px;
-      margin-bottom: 5px;
+    // limit and market
+    &__limitMarket{
+      &__col{
+        margin: 0;
+      }
     }
-    &__info,
-    &__valueWithdraw,
-    &__valueDeposit{
-      font-size: 13px;
+    // charters
+    &__drop{
+      margin-bottom: 30px;
     }
-    &__row {
-      padding: 21px 10px;
-    }
-    &__rowTitle{
-      padding: 17px 10px;
-    }
-    &__announceRow{
-      padding: 10px;
-    }
-    &__announce{
+    &__statistic{
       padding-right: 0;
+      margin-bottom: 60px;
+    }
+  }
+  /* ========== dashboard tab ========== */
+  .dashboard {
+    // activity
+    &__activity{
+      &__date,
+      &__text{
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+      &__info,
+      &__valueWithdraw,
+      &__valueDeposit{
+        font-size: 13px;
+      }
+      &__row {
+        padding: 21px 10px;
+      }
+    }
+    // announcements
+    &__announcement{
+      &__row{
+        padding: 10px;
+      }
       &__title{
         font-size: 16px;
         margin-bottom: 5px;
@@ -156,146 +95,71 @@
       }
     }
   }
-  /* ========== History tab ========== */
-  .history{
-    .history-login,
-    .history-transactions,
-    .history-order{
-      .tbl-th--30{
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-      .tbl-th--20,
-      .tbl-th--15{
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-    }
-  }
   /* ========== addresses tab ========== */
-  .addresses-account{
-    &__row{
-      padding: 15px;
-      flex-direction: column;
-    }
-    &__col_5{
-      width: 100%;
-    }
-    &__col_15,
-    &__col_25,
-    &__col_30,
-    &__col_50{
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-    }
-    &__title{
-      flex-shrink: 0;
-    }
-    &__info{
-      flex-grow: 1;
-      min-width: 1px;
-      text-align: right;
-      margin-left: 15px;
+  .addresses{
+    // addresses account
+    &__account{
+      &__row{
+        padding: 15px;
+        flex-direction: column;
+      }
+      &__col3{
+        width: 100%;
+      }
+      &__col15,
+      &__col24,
+      &__col25,
+      &__col30,
+      &__col50{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      &__title{
+        flex-shrink: 0;
+      }
+      &__info{
+        flex-grow: 1;
+        min-width: 1px;
+        text-align: right;
+        margin-left: 15px;
+      }
     }
   }
   /* ========== settings tab ========== */
-  .padding--left{
-    padding-left: 15px;
-  }
   .settings{
     .colWidth{
       width: 100%;
     }
-    .colLeft {
-      padding-right: 15px;
+    .padding--left {
+      padding-left: 30px;
     }
-  }
-  /* ========== buySell ========== */
-  .buySell{
-    &__limit{
-      &__box{
-        margin: 0;
-      }
-    }
-    &__charters{
-      &__statistic{
-        padding-right: 0;
-        margin-bottom: 60px;
-      }
+    .padding--right{
+      padding-right: 30px;
     }
   }
 }
 @media screen and (max-width: 767px) {
-  .colRight {
-    border-left: 0;
-    margin-top: 50px;
-  }
-  /* ========== Table ========== */
-  .tbl {
-    display: none;
-  }
-  .tbl-mobile-box {
-    display: block;
-  }
-  /* ========== Withdraw ========== */
-  .withdraw {
-    .form-group ~ .form-group {
-      margin-top: 20px;
-    }
-  }
   /* ========== Deposit ========== */
   .deposit {
-    &__title {
-      margin-bottom: 20px;
-    }
-
-    &__text {
-      & ~ .deposit__text {
-        margin-top: 10px;
-      }
-    }
-
-    &__infoRow {
-      margin-top: 15px;
-
-      &--benef {
-        margin-bottom: 10px;
-      }
-    }
-
-    &__formGroup {
-      margin-bottom: 20px;
+    &__borderTop {
+      border-top: 1px solid #dedede;
+      padding-top: 50px;
     }
   }
-  /* ========== Dashboard ========== */
-  .main__child {
-    .nav-link {
-      font-size: 16px;
-      padding: 8px 10px;
+  /* ========== Buy/Sell ========== */
+  .buySell{
+    // order book
+    &__orderBook{
+      &__col{
+        margin-bottom: 30px;
+      }
     }
   }
+  /* ========== dashboard tab ========== */
   .dashboard {
-    &__boxCol {
-      & ~ .dashboard__boxCol {
-        margin-top: 30px;
-      }
-    }
-    &__row {
-      padding: 10px;
-    }
-    &__rowTitle{
-      padding: 15px 10px;
-    }
-    &__announceRow{
-      padding: 10px;
-    }
-    &-balance{
-      &__value {
-        font-size: 13px;
-      }
-    }
-    &-balance{
+    // dashboard balance
+    &__balance {
       &__box {
         margin-left: 10px;
       }
@@ -306,10 +170,41 @@
       &__text{
         font-size: 12px;
       }
-      &__col_25{
+      &__value{
+        font-size: 13px;
+      }
+      &__col25{
         img{
           width: 40px;
         }
+      }
+    }
+    // activity
+    &__activity{
+      &__boxCol{
+        & ~ .dashboard__activity__boxCol{
+          margin-top: 30px;
+        }
+      }
+      &__rowTitle {
+        padding: 15px 10px;
+      }
+      &__row{
+        padding: 10px;
+      }
+      &__viewAll{
+        font-size: 13px;
+      }
+      &__date,
+      &__text{
+        font-size: 14px;
+      }
+    }
+    // announcements
+    &__announcement{
+      &__title{
+        font-size: 14px;
+        margin-bottom: 5px;
       }
     }
   }
@@ -325,189 +220,87 @@
   }
   /* ========== settings tab ========== */
   .settings{
-    .colRight {
-      margin-top: 0;
+    .padding--left {
+      padding-left: 0;
     }
-    &__doubleBorder{
+    .padding--right{
+      padding-right: 0;
+    }
+    .delete-padding--left{
+      padding-left: 15px;
+      border-left: none;
+    }
+    .delete-padding--right{
+      padding-right: 15px;
+    }
+    &__doubleBorder {
       border-top: 1px solid #dedede;
       padding-top: 40px;
       margin-top: 40px;
     }
-    &__API{
-      .settings__btnRow {
-        margin-top: 40px;
-      }
-    }
-  }
-  /* ========== buySell ========== */
-  .buySell__limit__box{
-    margin: 0;
-    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 576px) {
-  .inside-header {
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  .colRight {
-    margin-top: 30px;
-  }
-  /* ========== Table ========== */
-  .tbl__title {
-    font-size: 16px;
-  }
-  /* ========== dropdown========== */
-  .drop{
-    &__buttonBox {
-      height: 40px;
-      padding: 0 15px;
-    }
-    &__link {
-      padding: 10px 15px;
-    }
-  }
-  .withdraw .form-control,
-  .deposit .form-control,
-  .addresses .form-control,
-  .settings .form-control{
-    height: 40px!important;
-    font-size: 13px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
   /* ========== Withdraw ========== */
   .withdraw{
-    &__row {
-      margin-bottom: 5px;
-    }
+    &__text,
     &__value{
       font-size: 13px;
     }
-    &__text{
-      font-size: 13px;
-    }
     &__result {
-      margin-top: 20px;
       margin-bottom: 25px;
       &__row {
         margin-bottom: 10px;
       }
     }
   }
-  /* ========== Pagination ========== */
-  .pagination{
-    &__item{
-      width: 35px;
-      height: 35px;
-      line-height: 35px;
-    }
-    &__linkDisable {
-      width: 35px;
-      height: 35px;
-      line-height: 40px;
-    }
-  }
   /* ========== Deposit ========== */
   .deposit{
     &__title {
-      margin-bottom: 15px;
       font-size: 16px;
+      margin-bottom: 15px;
     }
-    &__infoRow{
-      margin-top: 10px;
-      &--benef {
+    &__text {
+      & ~ .deposit__text {
+        margin-top: 10px;
+      }
+    }
+    &__info{
+      margin-top: 15px;
+      &__row{
         margin-bottom: 5px;
       }
     }
-    &__formGroup {
-      margin-bottom: 20px;
-    }
-    &__label {
-      font-size: 13px;
-      margin-bottom: 5px;
+    &__barCode{
+      img {
+        width: 70%;
+        padding: 15px;
+      }
     }
   }
   /* ========== Buy/Sell ========== */
   .buySell{
-    &__tradeHistory {
-      margin-bottom: 30px;
-    }
-    &__transactions {
-      margin: 40px 0;
-    }
-    &__order{
-      &__title {
-        font-size: 16px;
-        margin-bottom: 15px;
+    // limit and market
+    &__limitMarket{
+      &__col{
+        padding: 15px;
       }
-      &__board{
-        .tbl{
-          display: none;
-        }
-        .tbl-mobile-box{
-          display: block;
-        }
-        .tbl-mobile__row:nth-child(odd){
-          background-color: #fff;
-        }
-        .tbl-mobile__head {
-          color: #929292;
-          text-transform: capitalize;
-        }
-        .tbl-mobile__text{
-          color: #929292;
-          text-transform: capitalize;
-        }
+      &__row{
+        margin-bottom: 5px;
+      }
+      &__mb{
+        margin-bottom: 20px;
       }
     }
   }
-  /* ========== Dashboard ========== */
-  .main__child{
-    .nav-link{
-      font-size: 13px;
-    }
-  }
-  /* ========== Dashboard ========== */
-  .dashboard{
-    &-balance{
+  /* ========== dashboard tab ========== */
+  .dashboard {
+    // dashboard balance
+    &__balance {
       display: none;
-      &-md{
+      &-sm{
         display: block;
       }
-    }
-    &__date,
-    &__text{
-      font-size: 13px;
-    }
-    &__row {
-      padding: 10px;
-    }
-    &__rowTitle{
-      padding: 15px 10px;
-    }
-    &__announceRow{
-      padding: 10px;
-    }
-    &__announce{
-      &__title{
-        font-size: 13px;
-      }
-    }
-  }
-  /* ========== History tab ========== */
-  .history{
-    &__drop{
-      margin-top: 20px;
-    }
-    .tbl__title{
-      font-size: 20px;
-    }
-    .drop__buttonBox {
-      padding: 0 15px;
-    }
-    .drop__link {
-      padding: 10px 15px;
     }
   }
   /* ========== addresses tab ========== */
@@ -516,7 +309,8 @@
       font-size: 16px;
       margin-right: 10px;
     }
-    &-account{
+    // addresses account
+    &__account{
       &__row{
         padding: 10px;
       }
@@ -528,17 +322,18 @@
         font-size: 13px;
       }
     }
-    &-crypto{
+    // crypto addresses
+    &__crypto{
       margin-top: 40px;
     }
   }
+  /* ========== History tab ========== */
+  .history{
+    &__drop{
+      margin-top: 20px;
+    }
+  }
   /* ========== settings tab ========== */
-  .padding--left{
-    padding-left: 0;
-  }
-  .delete-padding--right{
-    padding-right: 15px;
-  }
   .settings{
     &__title {
       font-size: 16px;
@@ -547,6 +342,7 @@
     &__row {
       margin-bottom: 10px;
     }
+    &__doubleBorder,
     &__border {
       margin-top: 25px;
       padding-top: 25px;
@@ -557,11 +353,6 @@
     &__btnRow {
       margin-top: 25px;
     }
-    &__API{
-      .settings__btnRow {
-        margin-top: 25px;
-      }
-    }
     &__text{
       & ~ .settings__text {
         margin-top: 10px;
@@ -570,87 +361,9 @@
     &__generateText {
       margin-top: 20px;
     }
-    .colRight {
-      padding-left: 15px;
-    }
-    .colLeft {
-      padding-right: 15px;
-    }
-    &__doubleBorder{
-      padding-top: 25px;
-      margin-top: 25px;
-    }
-  }
-  /* ========== buySell ========== */
-  .buySell {
-    &__limit {
-      margin-bottom: 25px;
-
-      &__row {
-        margin-bottom: 5px;
-      }
-
-      &__box {
-        padding: 15px;
-
-        &__row {
-          margin-bottom: 5px;
-        }
-
-        &__value {
-          margin-left: 5px;
-        }
-      }
-
-      &__input {
-        height: 40px;
-        font-size: 13px;
-        margin-bottom: 10px;
-      }
-    }
-    &__charters {
-      .drop__parent {
-        margin-bottom: 30px;
-      }
-      &__statistic {
-        margin-bottom: 30px;
-        &__value {
-          margin-left: 5px;
-        }
-        &__row {
-          & ~ .buySell__charters__statistic__row {
-            margin-top: 10px;
-          }
-        }
-      }
-    }
   }
 }
 @media screen and (max-width: 380px) {
-  /* ========== Pagination ========== */
-  .pagination{
-    &__item {
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-    }
-    &__linkDisable {
-      width: 30px;
-      height: 30px;
-      line-height: 35px;
-    }
-  }
-  /* ========== Dashboard ========== */
-  .main__child{
-    .nav-item{
-      margin-left: 1px;
-      margin-right: 1px;
-    }
-    .nav-link{
-      font-size: 13px;
-      padding: 8px;
-    }
-  }
   /* ========== addresses tab ========== */
   .addresses{
     &__add{
@@ -662,42 +375,5 @@
   }
 }
 @media screen and (max-width: 330px) {
-  /* ========== Dashboard ========== */
-  .main__child{
-    .nav-link{
-      font-size: 12px;
-      padding: 6px;
-    }
-  }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
