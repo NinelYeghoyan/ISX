@@ -32,7 +32,11 @@ $(document).ready(function () {
     });
     // Addresses page add account
     $(".addresses__add__btn").click(function() {
-        $(this).next(".addresses__add__list").toggle();
+        $(this).next(".dropdown-btn__list").toggle();
+    });
+    // edit account
+    $(".addresses__account--edit").click(function() {
+        $(this).next(".dropdown-btn__list").toggle();
     });
     // log out dropdown
     $(".header__userMail").click(function() {
@@ -102,8 +106,8 @@ $(document).click(function (event) {
         $(".drop").find("img").removeClass("drop__rotate");
     }
     if(event.target.className.search('addresses__add')===-1){
-        if(!$(event.target).parents('.addresses__add__list').length){
-            $(".addresses__add__list").hide();
+        if(!$(event.target).parents('.dropdown-btn__list').length){
+            $(".dropdown-btn__list").hide();
         }
     }
     if(event.target.className.search('header__userMail')===-1){

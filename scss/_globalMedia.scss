@@ -97,6 +97,14 @@
       padding: 8px 10px;
     }
   }
+  /* ========== dropdown btn ========== */
+  .dropdown-btn{
+    &__list{
+      min-width: 300px;
+      top: 54px;
+      padding: 20px 10px;
+    }
+  }
   /* ************* End of global style ************* */
 }
 @media screen and (max-width: 576px) {
@@ -178,6 +186,13 @@
     .nav-link{
       font-size: 13px;
       padding: 8px;
+    }
+  }
+  /* ========== dropdown btn ========== */
+  .dropdown-btn{
+    &__list{
+      min-width: 280px;
+      top: 50px;
     }
   }
   /* ************* End of global style ************* */

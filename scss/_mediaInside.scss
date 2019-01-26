@@ -208,16 +208,6 @@
       }
     }
   }
-  /* ========== addresses tab ========== */
-  .addresses{
-    &__add{
-      &__list {
-        min-width: 300px;
-        top: 54px;
-        padding: 20px 10px;
-      }
-    }
-  }
   /* ========== settings tab ========== */
   .settings{
     .padding--left {
@@ -364,15 +354,7 @@
   }
 }
 @media screen and (max-width: 380px) {
-  /* ========== addresses tab ========== */
-  .addresses{
-    &__add{
-      &__list {
-        min-width: 280px;
-        top: 50px;
-      }
-    }
-  }
+
 }
 @media screen and (max-width: 330px) {
 

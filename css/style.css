@@ -1315,19 +1315,104 @@ a:hover, a:focus {
     width: 40px;
     height: 40px; }
 
+.tooltip__box {
+  position: relative;
+  cursor: pointer; }
+  .tooltip__box .tooltip__text {
+    visibility: hidden;
+    min-width: 150px;
+    font-size: 15px;
+    line-height: 1.2;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    -webkit-box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
+            box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
+    color: #696969;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px; }
+    .tooltip__box .tooltip__text:before {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -18px;
+      right: 79px;
+      border-width: 9px;
+      border-style: solid;
+      border-color: transparent transparent transparent #ebebeb;
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+    .tooltip__box .tooltip__text:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: -15px;
+      right: 80px;
+      border-width: 8px;
+      border-style: solid;
+      border-color: transparent transparent transparent #fff;
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
+  .tooltip__box:hover .tooltip__text {
+    visibility: visible; }
+
+.modal__body {
+  padding: 30px; }
+
+.modal .button {
+  height: 35px;
+  padding: 0 15px;
+  margin: 0 3px; }
+
+.modal__text {
+  text-align: center;
+  color: #ff5b91;
+  margin-bottom: 30px; }
+
+/* ========== dropdown btn ========== */
+.dropdown-btn {
+  position: relative; }
+  .dropdown-btn__list {
+    display: none;
+    min-width: 400px;
+    position: absolute;
+    z-index: 99;
+    top: 65px;
+    right: 0;
+    border: 1px solid #dedede;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
+            box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
+    padding: 30px 20px; }
+
 .dashboard__title {
   color: #01567a; }
 
-.dashboard__drop {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  min-width: 1px; }
-  .dashboard__drop .drop__box {
-    height: 100%;
-    border: none;
-    padding: 0; }
+.dashboard__drop .drop__box {
+  height: 100%;
+  border: none;
+  padding: 0; }
+
+.dashboard__drop .drop__value {
+  margin-right: 10px; }
+
+.dashboard__drop .drop__list {
+  min-width: 120px;
+  top: 25px;
+  left: -39px; }
 
 .dashboard__balance {
   border: 1px solid #dedede;
@@ -1597,25 +1682,6 @@ a:hover, a:focus {
   font-size: 20px;
   color: #616161;
   margin-right: 22px; }
-
-.addresses__add {
-  position: relative; }
-  .addresses__add__list {
-    display: none;
-    min-width: 400px;
-    position: absolute;
-    z-index: 99;
-    top: 65px;
-    right: 0;
-    border: 1px solid #dedede;
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
-    background-color: #fff;
-    -webkit-box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
-            box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
-    padding: 30px 20px; }
-    .addresses__add__list .form-group {
-      margin-bottom: 20px; }
 
 .addresses__account__row {
   padding: 25px;
@@ -2343,11 +2409,6 @@ a:hover, a:focus {
   .dashboard__announcement__title {
     font-size: 14px;
     margin-bottom: 5px; }
-  /* ========== addresses tab ========== */
-  .addresses__add__list {
-    min-width: 300px;
-    top: 54px;
-    padding: 20px 10px; }
   /* ========== settings tab ========== */
   .settings .padding--left {
     padding-left: 0; }
@@ -2430,12 +2491,6 @@ a:hover, a:focus {
   .settings__generateText {
     margin-top: 20px; } }
 
-@media screen and (max-width: 380px) {
-  /* ========== addresses tab ========== */
-  .addresses__add__list {
-    min-width: 280px;
-    top: 50px; } }
-
 @media screen and (max-width: 992px) {
   /* ************* Global style ************* */
   /* ========== col left and right style ========== */
@@ -2496,6 +2551,11 @@ a:hover, a:focus {
   .main__child .nav-link {
     font-size: 16px;
     padding: 8px 10px; }
+  /* ========== dropdown btn ========== */
+  .dropdown-btn__list {
+    min-width: 300px;
+    top: 54px;
+    padding: 20px 10px; }
   /* ************* End of global style ************* */ }
 
 @media screen and (max-width: 576px) {
@@ -2553,6 +2613,10 @@ a:hover, a:focus {
   .main__child .nav-link {
     font-size: 13px;
     padding: 8px; }
+  /* ========== dropdown btn ========== */
+  .dropdown-btn__list {
+    min-width: 280px;
+    top: 50px; }
   /* ************* End of global style ************* */ }
 
 @media screen and (max-width: 330px) {

@@ -326,11 +326,14 @@
                         <div class="addresses__row d-flex align-items-center justify-content-between">
                             <div class="d-flex align-items-center">
                                 <h6 class="addresses__title">Bank accounts</h6>
-                                <img src="../img/icons/info.png" alt="info"/>
+                                <div class="tooltip__box">
+                                    <img src="../img/icons/info.png" alt="info"/>
+                                    <span class="tooltip__text">Lorem ipsum dolor sit amet</span>
+                                </div>
                             </div>
-                            <div class="addresses__add">
+                            <div class="dropdown-btn">
                                 <button class="addresses__add__btn button btnLight">add account</button>
-                                <div class="addresses__add__list">
+                                <div class="dropdown-btn__list">
                                     <form>
                                         <div class="form__row">
                                             <input type="text" class="input" placeholder="Account name">
@@ -372,9 +375,9 @@
                                 <p class="addresses__account__info">125 2563</p>
                             </div>
                             <div class="addresses__account__col addresses__account__col3 addresses__account--delete">
-                                <img src="../img/icons/delete.png" alt="delete"/>
+                                <img src="../img/icons/delete.png" class="addresses__account--edit" alt="edit"/>
                             </div>
-                            <div class="addresses__account__col addresses__account__col3 addresses__account--delete">
+                            <div class="addresses__account__col addresses__account__col3 addresses__account--delete" data-toggle="modal" data-target="#myModal">
                                 <img src="../img/icons/delete.png" alt="delete"/>
                             </div>
                         </div>
@@ -385,7 +388,10 @@
                     <div class="container">
                         <div class="addresses__row d-flex align-items-center">
                             <h6 class="addresses__title">Crypto addresses</h6>
-                            <img src="../img/icons/info.png" alt="info"/>
+                            <div class="tooltip__box">
+                                <img src="../img/icons/info.png" alt="info"/>
+                                <span class="tooltip__text">Lorem ipsum dolor sit amet</span>
+                            </div>
                         </div>
                         <div class="addresses__account__row addresses__row d-flex align-items-center">
                             <div class="addresses__account__col25">
@@ -406,6 +412,23 @@
                         </div>
                     </div>
                 </section>
+                <!-- Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <!-- Modal body -->
+                            <div class="modal__body">
+                                <p class="modal__text">
+                                    Are you sure you want to delete the Bank Account?
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <button class="button btnLight" data-dismiss="modal">Yes</button>
+                                    <button class="button" data-dismiss="modal">No</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- =============== History tab =============== -->
             <div id="history" class="tab-pane fade">

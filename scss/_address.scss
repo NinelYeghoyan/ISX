@@ -9,25 +9,6 @@
     color: rgb(97, 97, 97);
     margin-right: 22px;
   }
-  &__add{
-    position: relative;
-    &__list{
-      display: none;
-      min-width: 400px;
-      position: absolute;
-      z-index: 99;
-      top: 65px;
-      right: 0;
-      border: 1px solid #dedede;
-      border-radius: 3px;
-      background-color: #fff;
-      box-shadow: 0 0 2.85px 0.15px rgba(0, 0, 0, 0.17);
-      padding: 30px 20px;
-      .form-group{
-        margin-bottom: 20px;
-      }
-    }
-  }
   // addresses account
   &__account{
     &__row{
@@ -79,6 +60,7 @@
     margin-top: 70px;
   }
 }
+
 
 
 

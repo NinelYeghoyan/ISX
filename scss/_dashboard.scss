@@ -5,12 +5,18 @@
     color: #01567a;
   }
   &__drop{
-    flex-grow: 1;
-    min-width: 1px;
     .drop__box{
       height: 100%;
       border: none;
       padding: 0;
+    }
+    .drop__value{
+      margin-right: 10px;
+    }
+    .drop__list{
+      min-width: 120px;
+      top: 25px;
+      left: -39px;
     }
   }
   // balance style
@@ -159,48 +165,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
