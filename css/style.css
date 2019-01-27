@@ -1312,6 +1312,7 @@ a:hover, a:focus {
     width: 40px;
     height: 40px; }
 
+/* ========== tooltip style ========== */
 .tooltip__box {
   position: relative;
   cursor: pointer; }
@@ -1364,6 +1365,7 @@ a:hover, a:focus {
   .tooltip__box:hover .tooltip__text {
     visibility: visible; }
 
+/* ========== modal style ========== */
 .modal__body {
   padding: 30px 30px 20px 30px; }
 
@@ -1722,6 +1724,9 @@ a:hover, a:focus {
 
 .addresses__account__col50 {
   width: 50%; }
+
+.addresses__account .dropdown-btn__list {
+  top: 30px; }
 
 .addresses__crypto {
   border-top: 1px solid #dedede;
@@ -2365,6 +2370,8 @@ a:hover, a:focus {
     min-width: 1px;
     text-align: right;
     margin-left: 15px; }
+  .addresses__account .dropdown-btn__list {
+    top: 23px; }
   /* ========== settings tab ========== */
   .settings .colWidth {
     width: 100%; }
@@ -2595,6 +2602,11 @@ a:hover, a:focus {
   /* ========== Tabs style ========== */
   .main__child .nav-link {
     font-size: 13px; }
+  /* ========== modal style ========== */
+  .modal__body {
+    padding: 20px; }
+  .modal__text {
+    font-size: 14px; }
   /* ************* End of global style ************* */ }
 
 @media screen and (max-width: 380px) {
@@ -2612,7 +2624,7 @@ a:hover, a:focus {
     padding: 8px; }
   /* ========== dropdown btn ========== */
   .dropdown-btn__list {
-    min-width: 280px;
+    min-width: 260px;
     top: 50px; }
   /* ************* End of global style ************* */ }
 

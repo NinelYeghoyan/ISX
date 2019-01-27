@@ -26,12 +26,23 @@ $(document).ready(function () {
         let txt = $(this).text();
         $(".history-table").hide();
         $("#"+ value).show();
-        $(".drop__value").text(txt);
-        $(".drop__item").removeClass("drop__none");
+        $(".history__drop .drop__value").text(txt);
+        $(".history__drop .drop__item").removeClass("drop__none");
         $(this).addClass("drop__none");
+        $(".table-lg-body .overlay-md").css("display", "flex");
+        setTimeout(function(){
+            $(".overlay-md").css("display", "none");
+        }, 2000);
     });
     // Addresses page add account
     $(".addresses__add__btn").click(function() {
+        $(".addresses__account--edit").next(".dropdown-btn__list").hide();
+        $(this).next(".dropdown-btn__list").toggle();
+    });
+    // Addresses page edit account
+    $(".addresses__account--edit").click(function() {
+        $(".addresses__add__btn").next(".dropdown-btn__list").hide();
+        $(".addresses__account--edit").not(this).next(".dropdown-btn__list").hide();
         $(this).next(".dropdown-btn__list").toggle();
     });
     // log out dropdown
@@ -101,7 +112,8 @@ $(document).click(function (event) {
         $(".drop").find(".drop__list").hide();
         $(".drop").find("img").removeClass("drop__rotate");
     }
-    if(event.target.className.search('addresses__add')===-1){
+    if(event.target.className.search('addresses__add')===-1&&
+        event.target.className.search('addresses__account--edit')){
         if(!$(event.target).parents('.dropdown-btn__list').length){
             $(".dropdown-btn__list").hide();
         }
