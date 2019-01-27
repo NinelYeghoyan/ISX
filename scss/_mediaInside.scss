@@ -103,8 +103,9 @@
         padding: 15px;
         flex-direction: column;
       }
-      &__col3{
+      &__col6{
         width: 100%;
+        justify-content: flex-end;
       }
       &__col15,
       &__col24,

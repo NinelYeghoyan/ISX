@@ -25,17 +25,17 @@
       font-size: 20px;
       color: rgb(97, 97, 97);
     }
-    &--delete{
-      text-align: right;
+    &--cursor{
       cursor: pointer;
+      margin: 0 5px;
     }
     &__col{
       flex-shrink: 0;
       padding-left: 5px;
       padding-right: 5px;
     }
-    &__col3{
-      width: 3%;
+    &__col6{
+      width: 6%;
     }
     &__col15{
       width: 15%;
