@@ -264,7 +264,9 @@
 /* ========== Pagination ========== */
 .pagination{
   margin-top: 30px;
-  &__link{
+  &__link,
+  &__disable,
+  &__arrow{
     width: 42px;
     height: 42px;
     display: flex;
@@ -275,25 +277,21 @@
     margin: 0 1px;
     color: #696969;
     flex-shrink: 0;
+  }
+  &__link{
     &:hover{
       background-color: #04B578;
       color: $white;
-    }
-  }
-  &--active{
-    background-color: #04B578;
-    color: $white;
-  }
-  &__disable{
-    &:hover{
-      background-color: #fff;
-      color: #696969;
     }
   }
   &__arrow{
     &:hover{
       background-color: #b7b7b7;
     }
+  }
+  &--active{
+    background-color: #04B578;
+    color: $white;
   }
 }
 /* ========== Dropdown ========== */
@@ -447,7 +445,7 @@
 // modal style
 .modal{
   &__body{
-    padding: 30px;
+    padding: 30px 30px 20px 30px;
   }
   .button{
     height: 35px;
@@ -456,7 +454,7 @@
   }
   &__text{
     text-align: center;
-    color: #ff5b91;
+    color: #8b8b8b;
     margin-bottom: 30px;
   }
 }

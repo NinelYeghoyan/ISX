@@ -1178,7 +1178,7 @@ a:hover, a:focus {
 /* ========== Pagination ========== */
 .pagination {
   margin-top: 30px; }
-  .pagination__link {
+  .pagination__link, .pagination__disable, .pagination__arrow {
     width: 42px;
     height: 42px;
     display: -webkit-box;
@@ -1203,17 +1203,14 @@ a:hover, a:focus {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0; }
-    .pagination__link:hover {
-      background-color: #04B578;
-      color: #ffffff; }
+  .pagination__link:hover {
+    background-color: #04B578;
+    color: #ffffff; }
+  .pagination__arrow:hover {
+    background-color: #b7b7b7; }
   .pagination--active {
     background-color: #04B578;
     color: #ffffff; }
-  .pagination__disable:hover {
-    background-color: #fff;
-    color: #696969; }
-  .pagination__arrow:hover {
-    background-color: #b7b7b7; }
 
 /* ========== Dropdown ========== */
 .drop {
@@ -1368,7 +1365,7 @@ a:hover, a:focus {
     visibility: visible; }
 
 .modal__body {
-  padding: 30px; }
+  padding: 30px 30px 20px 30px; }
 
 .modal .button {
   height: 35px;
@@ -1377,7 +1374,7 @@ a:hover, a:focus {
 
 .modal__text {
   text-align: center;
-  color: #ff5b91;
+  color: #8b8b8b;
   margin-bottom: 30px; }
 
 /* ========== dropdown btn ========== */
@@ -1853,10 +1850,10 @@ a:hover, a:focus {
   border-left: 1px solid #dedede; }
 
 .auth-banner .custom-control-label {
-  margin-top: 3px;
+  margin-top: 4px;
   cursor: pointer; }
 
-.auth-banner .custom-checkbox .custom-control-input:checked ~ .custom-control-label:before {
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label:before {
   background-color: #01567A; }
 
 .help .card-body {
@@ -2527,7 +2524,7 @@ a:hover, a:focus {
     padding-left: 15px;
     padding-right: 15px; }
   /* ========== Pagination ========== */
-  .pagination__link {
+  .pagination__link, .pagination__disable, .pagination__arrow {
     width: 35px;
     height: 35px;
     font-size: 13px; }
@@ -2603,7 +2600,7 @@ a:hover, a:focus {
 @media screen and (max-width: 380px) {
   /* ************* Global style ************* */
   /* ========== Pagination ========== */
-  .pagination__link {
+  .pagination__link, .pagination__disable, .pagination__arrow {
     width: 28px;
     height: 28px; }
   /* ========== Tabs style ========== */

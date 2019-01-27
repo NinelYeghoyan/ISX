@@ -26,16 +26,12 @@ $(document).ready(function () {
         let txt = $(this).text();
         $(".history-table").hide();
         $("#"+ value).show();
-        $(".drop__button").text(txt);
+        $(".drop__value").text(txt);
         $(".drop__item").removeClass("drop__none");
         $(this).addClass("drop__none");
     });
     // Addresses page add account
     $(".addresses__add__btn").click(function() {
-        $(this).next(".dropdown-btn__list").toggle();
-    });
-    // edit account
-    $(".addresses__account--edit").click(function() {
         $(this).next(".dropdown-btn__list").toggle();
     });
     // log out dropdown

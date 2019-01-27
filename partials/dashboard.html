@@ -63,257 +63,253 @@
 <main class="main">
     <div class="main__child">
         <!-- Nav tabs -->
-        <div class="container-fluid">
-            <div class="container-md">
-                <ul class="nav nav-tabs justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#dashboard">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#address">Addresses</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#history">History</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#settings">Settings</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="container">
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#dashboard">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#address">Addresses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#history">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#settings">Settings</a>
+                </li>
+            </ul>
         </div>
         <!-- Tab panes -->
         <div class="tab-content">
             <!-- =============== dashboard tab =============== -->
-            <div id="dashboard" class="tab-pane active">
-                <div class="container-fluid">
-                    <div class="container-md">
-                        <h3 class="top-header">Dashboard</h3>
-                        <div class="dashboard">
-                            <!-- dashboard balance -->
-                            <section class="dashboard__balance">
-                                <div class="dashboard__balance__head d-flex align-items-center">
-                                    <div class="dashboard__balance__col25">
-                                        <h6 class="dashboard__title">Balance</h6>
+            <div id="dashboard" class="tab-pane fade active show">
+                <div class="container">
+                    <h3 class="top-header">Dashboard</h3>
+                    <div class="dashboard">
+                        <!-- dashboard balance -->
+                        <section class="dashboard__balance">
+                            <div class="dashboard__balance__head d-flex align-items-center">
+                                <div class="dashboard__balance__col25">
+                                    <h6 class="dashboard__title">Balance</h6>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <h6 class="dashboard__title">Total</h6>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <h6 class="dashboard__title">On hold</h6>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <h6 class="dashboard__title">ISK Estimate</h6>
+                                </div>
+                            </div>
+                            <div class="dashboard__balance__row d-flex align-items-center">
+                                <div class="dashboard__balance__col25 d-flex align-items-center">
+                                    <img src="../img/icons/bitcoin.png" alt="bitcoin"/>
+                                    <div class="dashboard__balance__box">
+                                        <h6 class="dashboard__balance__title">Bitcoin</h6>
+                                        <p class="dashboard__balance__text">BTC</p>
                                     </div>
-                                    <div class="dashboard__balance__col25">
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                            </div>
+                            <div class="dashboard__balance__row d-flex align-items-center">
+                                <div class="dashboard__balance__col25 d-flex align-items-center">
+                                    <img src="../img/icons/litecoin.png" alt="litecoin"/>
+                                    <div class="dashboard__balance__box">
+                                        <h6 class="dashboard__balance__title">Litecoin</h6>
+                                        <p class="dashboard__balance__text">LTC</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                            </div>
+                            <div class="dashboard__balance__row d-flex align-items-center">
+                                <div class="dashboard__balance__col25 d-flex align-items-center">
+                                    <img src="../img/icons/dollar.png" alt="dollar"/>
+                                    <div class="dashboard__balance__box">
+                                        <h6 class="dashboard__balance__title">US Dollars</h6>
+                                        <p class="dashboard__balance__text">USD</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                                <div class="dashboard__balance__col25">
+                                    <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- dashboard balance mobile -->
+                        <section class="dashboard__balance-sm">
+                            <div class="dashboard__balance-sm__block d-flex align-items-center">
+                                <div>
+                                    <img src="../img/icons/bitcoin.png" alt="bitcoin"/>
+                                    <p class="dashboard__balance__text text-center">BTC</p>
+                                </div>
+                                <div class="dashboard__balance-sm__box">
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
                                         <h6 class="dashboard__title">Total</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
                                     </div>
-                                    <div class="dashboard__balance__col25">
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
                                         <h6 class="dashboard__title">On hold</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
                                     </div>
-                                    <div class="dashboard__balance__col25">
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
                                         <h6 class="dashboard__title">ISK Estimate</h6>
-                                    </div>
-                                </div>
-                                <div class="dashboard__balance__row d-flex align-items-center">
-                                    <div class="dashboard__balance__col25 d-flex align-items-center">
-                                        <img src="../img/icons/bitcoin.png" alt="bitcoin"/>
-                                        <div class="dashboard__balance__box">
-                                            <h6 class="dashboard__balance__title">Bitcoin</h6>
-                                            <p class="dashboard__balance__text">BTC</p>
-                                        </div>
-                                    </div>
-                                    <div class="dashboard__balance__col25">
-                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
-                                    </div>
-                                    <div class="dashboard__balance__col25">
-                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
-                                    </div>
-                                    <div class="dashboard__balance__col25">
                                         <p class="dashboard__balance__value">0.95412178 BTC</p>
                                     </div>
                                 </div>
-                                <div class="dashboard__balance__row d-flex align-items-center">
-                                    <div class="dashboard__balance__col25 d-flex align-items-center">
-                                        <img src="../img/icons/litecoin.png" alt="litecoin"/>
-                                        <div class="dashboard__balance__box">
-                                            <h6 class="dashboard__balance__title">Litecoin</h6>
-                                            <p class="dashboard__balance__text">LTC</p>
-                                        </div>
-                                    </div>
-                                    <div class="dashboard__balance__col25">
-                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
-                                    </div>
-                                    <div class="dashboard__balance__col25">
-                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
-                                    </div>
-                                    <div class="dashboard__balance__col25">
-                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
-                                    </div>
+                            </div>
+                            <div class="dashboard__balance-sm__block d-flex align-items-center">
+                                <div>
+                                    <img src="../img/icons/litecoin.png" alt="litecoin"/>
+                                    <p class="dashboard__balance__text text-center">LTC</p>
                                 </div>
-                                <div class="dashboard__balance__row d-flex align-items-center">
-                                    <div class="dashboard__balance__col25 d-flex align-items-center">
-                                        <img src="../img/icons/dollar.png" alt="dollar"/>
-                                        <div class="dashboard__balance__box">
-                                            <h6 class="dashboard__balance__title">US Dollars</h6>
-                                            <p class="dashboard__balance__text">USD</p>
-                                        </div>
-                                    </div>
-                                    <div class="dashboard__balance__col25">
+                                <div class="dashboard__balance-sm__box">
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">Total</h6>
                                         <p class="dashboard__balance__value">0.95412178 BTC</p>
                                     </div>
-                                    <div class="dashboard__balance__col25">
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">On hold</h6>
                                         <p class="dashboard__balance__value">0.95412178 BTC</p>
                                     </div>
-                                    <div class="dashboard__balance__col25">
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">ISK Estimate</h6>
                                         <p class="dashboard__balance__value">0.95412178 BTC</p>
                                     </div>
                                 </div>
-                            </section>
-                            <!-- dashboard balance mobile -->
-                            <section class="dashboard__balance-sm">
-                                <div class="dashboard__balance-sm__block d-flex align-items-center">
-                                    <div>
-                                        <img src="../img/icons/bitcoin.png" alt="bitcoin"/>
-                                        <p class="dashboard__balance__text text-center">BTC</p>
+                            </div>
+                            <div class="dashboard__balance-sm__block d-flex align-items-center">
+                                <div>
+                                    <img src="../img/icons/dollar.png" alt="dollar"/>
+                                    <p class="dashboard__balance__text text-center">USD</p>
+                                </div>
+                                <div class="dashboard__balance-sm__box">
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">Total</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
                                     </div>
-                                    <div class="dashboard__balance-sm__box">
-                                        <div class="dashboard__balance-sm__row d-flex justify-content-between">
-                                            <h6 class="dashboard__title">Total</h6>
-                                            <p class="dashboard__balance__value">0.95412178 BTC</p>
-                                        </div>
-                                        <div class="dashboard__balance-sm__row d-flex justify-content-between">
-                                            <h6 class="dashboard__title">On hold</h6>
-                                            <p class="dashboard__balance__value">0.95412178 BTC</p>
-                                        </div>
-                                        <div class="dashboard__balance-sm__row d-flex justify-content-between">
-                                            <h6 class="dashboard__title">ISK Estimate</h6>
-                                            <p class="dashboard__balance__value">0.95412178 BTC</p>
-                                        </div>
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">On hold</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                    </div>
+                                    <div class="dashboard__balance-sm__row d-flex justify-content-between">
+                                        <h6 class="dashboard__title">ISK Estimate</h6>
+                                        <p class="dashboard__balance__value">0.95412178 BTC</p>
                                     </div>
                                 </div>
-                                <div class="dashboard__balance-sm__block d-flex align-items-center">
-                                    <div>
-                                        <img src="../img/icons/litecoin.png" alt="litecoin"/>
-                                        <p class="dashboard__balance__text text-center">LTC</p>
+                            </div>
+                        </section>
+                        <!-- dashboard activity and announcements -->
+                        <section class="dashboard__activity">
+                            <div class="row">
+                                <aside class="dashboard__activity__boxCol col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="dashboard__activity__box">
+                                        <div class="dashboard__activity__rowTitle d-flex align-items-center justify-content-between">
+                                            <h6 class="dashboard__title">Recent activity</h6>
+                                            <div class="dashboard__drop">
+                                                <div class="drop">
+                                                    <button type="button" class="drop__box d-flex align-items-center justify-content-between">
+                                                        <span class="drop__value">Request</span>
+                                                        <img src="../img/icons/arrow_down.png" alt="arrow down"/>
+                                                    </button>
+                                                    <ul class="drop__list">
+                                                        <li class="drop__item drop__none">Request</li>
+                                                        <li class="drop__item">Request-1</li>
+                                                        <li class="drop__item">Request-2</li>
+                                                        <li class="drop__item">Request-3</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard__activity__row">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__date">Apr 16</p>
+                                                <p class="dashboard__activity__text">0.95412178 BTC</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__info">Pending (2 confirmation)</p>
+                                                <p class="dashboard__activity__valueDeposit text-right">Deposit</p>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard__activity__row">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__date">Apr 10</p>
+                                                <p class="dashboard__activity__text">0.95412178 BTC</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__info">Confirmed</p>
+                                                <p class="dashboard__activity__valueWithdraw text-right">Withdraw</p>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard__activity__row">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__date">Apr 16</p>
+                                                <p class="dashboard__activity__text">0.95412178 BTC</p>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <p class="dashboard__activity__info">Pending (2 confirmation)</p>
+                                                <p class="dashboard__activity__valueDeposit text-right">Deposit</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="dashboard__activity__row dashboard__activity__viewAll">view all</a>
+                                        </div>
                                     </div>
-                                    <div class="dashboard__balance-sm__box">
-                                        <div class="dashboard__balance-sm__row d-flex justify-content-between">
-                                            <h6 class="dashboard__title">Total</h6>
-                                            <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                </aside>
+                                <aside class="dashboard__activity__boxCol col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="dashboard__activity__box">
+                                        <div class="dashboard__activity__rowTitle">
+                                            <h6 class="dashboard__title">Announcements</h6>
                                         </div>
-                                        <div class="dashboard__balance-sm__row d-flex justify-content-between">
-                                            <h6 class="dashboard__title">On hold</h6>
-                                            <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                        <div class="dashboard__announcement__row">
+                                            <div class="dashboard__announce">
+                                                <a href="announcement.html" class="dashboard__announcement__title">Crypto-Chaos After fork cancellation</a>
+                                                <p class="dashboard__announcement__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                            </div>
+                                            <p class="dashboard__announcement__date">Apr 11, 2018</p>
                                         </div>
-                                        <div class="dashboard__balance-sm__row d-flex justify-content-between">
-                                            <h6 class="dashboard__title">ISK Estimate</h6>
-                                            <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                        <div class="dashboard__announcement__row">
+                                            <div class="dashboard__announce">
+                                                <a href="announcement.html" class="dashboard__announcement__title">Crypto-Chaos After fork cancellation</a>
+                                                <p class="dashboard__announcement__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                            </div>
+                                            <p class="dashboard__announcement__date">Apr 11, 2018</p>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="dashboard__balance-sm__block d-flex align-items-center">
-                                    <div>
-                                        <img src="../img/icons/dollar.png" alt="dollar"/>
-                                        <p class="dashboard__balance__text text-center">USD</p>
-                                    </div>
-                                    <div class="dashboard__balance-sm__box">
-                                        <div class="dashboard__balance-sm__row d-flex justify-content-between">
-                                            <h6 class="dashboard__title">Total</h6>
-                                            <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                        <div class="dashboard__announcement__row">
+                                            <div class="dashboard__announce">
+                                                <a href="announcement.html" class="dashboard__announcement__title">Crypto-Chaos After fork cancellation</a>
+                                                <p class="dashboard__announcement__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
+                                            </div>
+                                            <p class="dashboard__announcement__date">Apr 11, 2018</p>
                                         </div>
-                                        <div class="dashboard__balance-sm__row d-flex justify-content-between">
-                                            <h6 class="dashboard__title">On hold</h6>
-                                            <p class="dashboard__balance__value">0.95412178 BTC</p>
-                                        </div>
-                                        <div class="dashboard__balance-sm__row d-flex justify-content-between">
-                                            <h6 class="dashboard__title">ISK Estimate</h6>
-                                            <p class="dashboard__balance__value">0.95412178 BTC</p>
+                                        <div>
+                                            <a href="#" class="dashboard__activity__row dashboard__activity__viewAll">view all</a>
                                         </div>
                                     </div>
-                                </div>
-                            </section>
-                            <!-- dashboard activity and announcements -->
-                            <section class="dashboard__activity">
-                                <div class="row">
-                                    <aside class="dashboard__activity__boxCol col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <div class="dashboard__activity__box">
-                                            <div class="dashboard__activity__rowTitle d-flex align-items-center justify-content-between">
-                                                <h6 class="dashboard__title">Recent activity</h6>
-                                                <div class="dashboard__drop">
-                                                    <div class="drop">
-                                                        <button type="button" class="drop__box d-flex align-items-center justify-content-between">
-                                                            <span class="drop__value">Request</span>
-                                                            <img src="../img/icons/arrow_down.png" alt="arrow down"/>
-                                                        </button>
-                                                        <ul class="drop__list">
-                                                            <li class="drop__item drop__none">Request</li>
-                                                            <li class="drop__item">Request-1</li>
-                                                            <li class="drop__item">Request-2</li>
-                                                            <li class="drop__item">Request-3</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="dashboard__activity__row">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="dashboard__activity__date">Apr 16</p>
-                                                    <p class="dashboard__activity__text">0.95412178 BTC</p>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="dashboard__activity__info">Pending (2 confirmation)</p>
-                                                    <p class="dashboard__activity__valueDeposit text-right">Deposit</p>
-                                                </div>
-                                            </div>
-                                            <div class="dashboard__activity__row">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="dashboard__activity__date">Apr 10</p>
-                                                    <p class="dashboard__activity__text">0.95412178 BTC</p>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="dashboard__activity__info">Confirmed</p>
-                                                    <p class="dashboard__activity__valueWithdraw text-right">Withdraw</p>
-                                                </div>
-                                            </div>
-                                            <div class="dashboard__activity__row">
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="dashboard__activity__date">Apr 16</p>
-                                                    <p class="dashboard__activity__text">0.95412178 BTC</p>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                    <p class="dashboard__activity__info">Pending (2 confirmation)</p>
-                                                    <p class="dashboard__activity__valueDeposit text-right">Deposit</p>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <a href="#" class="dashboard__activity__row dashboard__activity__viewAll">view all</a>
-                                            </div>
-                                        </div>
-                                    </aside>
-                                    <aside class="dashboard__activity__boxCol col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                        <div class="dashboard__activity__box">
-                                            <div class="dashboard__activity__rowTitle">
-                                                <h6 class="dashboard__title">Announcements</h6>
-                                            </div>
-                                            <div class="dashboard__announcement__row">
-                                                <div class="dashboard__announce">
-                                                    <a href="announcement.html" class="dashboard__announcement__title">Crypto-Chaos After fork cancellation</a>
-                                                    <p class="dashboard__announcement__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
-                                                </div>
-                                                <p class="dashboard__announcement__date">Apr 11, 2018</p>
-                                            </div>
-                                            <div class="dashboard__announcement__row">
-                                                <div class="dashboard__announce">
-                                                    <a href="announcement.html" class="dashboard__announcement__title">Crypto-Chaos After fork cancellation</a>
-                                                    <p class="dashboard__announcement__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
-                                                </div>
-                                                <p class="dashboard__announcement__date">Apr 11, 2018</p>
-                                            </div>
-                                            <div class="dashboard__announcement__row">
-                                                <div class="dashboard__announce">
-                                                    <a href="announcement.html" class="dashboard__announcement__title">Crypto-Chaos After fork cancellation</a>
-                                                    <p class="dashboard__announcement__text oe">Cryptocurrency Markets Heat Back Up Heading Lorem ipsu dolor</p>
-                                                </div>
-                                                <p class="dashboard__announcement__date">Apr 11, 2018</p>
-                                            </div>
-                                            <div>
-                                                <a href="#" class="dashboard__activity__row dashboard__activity__viewAll">view all</a>
-                                            </div>
-                                        </div>
-                                    </aside>
-                                </div>
-                            </section>
-                        </div>
+                                </aside>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -375,7 +371,28 @@
                                 <p class="addresses__account__info">125 2563</p>
                             </div>
                             <div class="addresses__account__col addresses__account__col3 addresses__account--delete">
-                                <img src="../img/icons/delete.png" class="addresses__account--edit" alt="edit"/>
+                                <div class="dropdown-btn">
+                                    <img src="../img/icons/delete.png" class="addresses__account--edit" alt="edit"/>
+                                    <div class="dropdown-btn__list">
+                                        <form>
+                                            <div class="form__row">
+                                                <input type="text" class="input" placeholder="Account name">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" placeholder="Account number">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" placeholder="Bank name">
+                                            </div>
+                                            <div class="form__row">
+                                                <input type="text" class="input" placeholder="Routing number">
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <button class="button">Add</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                             <div class="addresses__account__col addresses__account__col3 addresses__account--delete" data-toggle="modal" data-target="#myModal">
                                 <img src="../img/icons/delete.png" alt="delete"/>
@@ -581,7 +598,7 @@
                                     </div>
                                     <!-- pagination -->
                                     <div class="pagination d-flex align-items-center justify-content-center">
-                                        <a class="pagination__link pagination__arrow" href="javascript:void(0)">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
                                             <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
                                         </a>
                                         <a class="pagination__link" href="javascript:void(0)">1</a>
@@ -589,9 +606,9 @@
                                         <a class="pagination__link" href="javascript:void(0)">3</a>
                                         <a class="pagination__link" href="javascript:void(0)">4</a>
                                         <a class="pagination__link" href="javascript:void(0)">5</a>
-                                        <a class="pagination__link pagination__disable" href="javascript:void(0)">...</a>
+                                        <a class="pagination__disable" href="javascript:void(0)">...</a>
                                         <a class="pagination__link" href="javascript:void(0)">20</a>
-                                        <a class="pagination__link pagination__arrow" href="javascript:void(0)">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
                                             <img src="../img/icons/arrow-next.png" alt="arrow next"/>
                                         </a>
                                     </div>
@@ -728,7 +745,7 @@
                                     </div>
                                     <!-- pagination -->
                                     <div class="pagination d-flex align-items-center justify-content-center">
-                                        <a class="pagination__link pagination__arrow" href="javascript:void(0)">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
                                             <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
                                         </a>
                                         <a class="pagination__link" href="javascript:void(0)">1</a>
@@ -736,9 +753,9 @@
                                         <a class="pagination__link" href="javascript:void(0)">3</a>
                                         <a class="pagination__link" href="javascript:void(0)">4</a>
                                         <a class="pagination__link" href="javascript:void(0)">5</a>
-                                        <a class="pagination__link pagination__disable" href="javascript:void(0)">...</a>
+                                        <a class="pagination__disable" href="javascript:void(0)">...</a>
                                         <a class="pagination__link" href="javascript:void(0)">20</a>
-                                        <a class="pagination__link pagination__arrow" href="javascript:void(0)">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
                                             <img src="../img/icons/arrow-next.png" alt="arrow next"/>
                                         </a>
                                     </div>
@@ -836,7 +853,7 @@
                                     </div>
                                     <!-- pagination -->
                                     <div class="pagination d-flex align-items-center justify-content-center">
-                                        <a class="pagination__link pagination__arrow" href="javascript:void(0)">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
                                             <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
                                         </a>
                                         <a class="pagination__link" href="javascript:void(0)">1</a>
@@ -844,9 +861,9 @@
                                         <a class="pagination__link" href="javascript:void(0)">3</a>
                                         <a class="pagination__link" href="javascript:void(0)">4</a>
                                         <a class="pagination__link" href="javascript:void(0)">5</a>
-                                        <a class="pagination__link pagination__disable" href="javascript:void(0)">...</a>
+                                        <a class="pagination__disable" href="javascript:void(0)">...</a>
                                         <a class="pagination__link" href="javascript:void(0)">20</a>
-                                        <a class="pagination__link pagination__arrow" href="javascript:void(0)">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
                                             <img src="../img/icons/arrow-next.png" alt="arrow next"/>
                                         </a>
                                     </div>
@@ -963,7 +980,7 @@
                                     </div>
                                     <!-- pagination -->
                                     <div class="pagination d-flex align-items-center justify-content-center">
-                                        <a class="pagination__link pagination__arrow" href="javascript:void(0)">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
                                             <img src="../img/icons/arrow-prev.png" alt="arrow previous"/>
                                         </a>
                                         <a class="pagination__link" href="javascript:void(0)">1</a>
@@ -971,9 +988,9 @@
                                         <a class="pagination__link" href="javascript:void(0)">3</a>
                                         <a class="pagination__link" href="javascript:void(0)">4</a>
                                         <a class="pagination__link" href="javascript:void(0)">5</a>
-                                        <a class="pagination__link pagination__disable" href="javascript:void(0)">...</a>
+                                        <a class="pagination__disable" href="javascript:void(0)">...</a>
                                         <a class="pagination__link" href="javascript:void(0)">20</a>
-                                        <a class="pagination__link pagination__arrow" href="javascript:void(0)">
+                                        <a class="pagination__arrow" href="javascript:void(0)">
                                             <img src="../img/icons/arrow-next.png" alt="arrow next"/>
                                         </a>
                                     </div>
