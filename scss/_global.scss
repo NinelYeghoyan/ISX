@@ -333,6 +333,10 @@
       background-color: #F5F9FF;
     }
   }
+  &__link{
+    display: block;
+    color: #696969;
+  }
   &__rotate{
     transition: .2s ease;
     transform: rotate(-180deg);

@@ -1250,6 +1250,9 @@ a:hover, a:focus {
     cursor: pointer; }
     .drop__item:hover {
       background-color: #F5F9FF; }
+  .drop__link {
+    display: block;
+    color: #696969; }
   .drop__rotate {
     -webkit-transition: .2s ease;
     -o-transition: .2s ease;
@@ -1520,6 +1523,9 @@ a:hover, a:focus {
   transition: all .3s ease; }
   .dashboard__activity__viewAll:hover {
     background-color: #F7F9FF; }
+
+.dashboard__activity__block {
+  position: relative; }
 
 .dashboard__announcement__row {
   padding: 10px 20px;
