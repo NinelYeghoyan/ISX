@@ -9,16 +9,14 @@
 }
 /* ========== Button and btnLight ========== */
 .button{
-  display: inline-flex;
-  align-items: center;
-  height: 45px;
+  display: inline-block;
   font-size: 14px;
   text-transform: uppercase;
   border-radius: 3px;
   border: 2px solid $blue;
   background-color: $blue;
   color: $white;
-  padding: 0 30px;
+  padding: 14px 30px;
   transition: .2s;
   cursor: pointer;
   &:hover{
@@ -27,7 +25,6 @@
   }
 }
 .btnLight{
-  border: 2px solid $blue;
   background-color: transparent;
   color: $blue;
   &:hover{
@@ -109,6 +106,7 @@
 }
 /* ========== Inside pages header ========== */
 .top-header{
+  display: none;
   font-size: 25px;
   font-weight: bold;
   color: $blue;
@@ -273,18 +271,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 100%;
+    border: 1px solid transparent;
     transition: .2s ease;
     margin: 0 1px;
     color: #696969;
     flex-shrink: 0;
-  }
-  &__link{
-    &:hover{
-      background-color: #04B578;
-      color: $white;
-    }
-  }
-  &__arrow{
     &:hover{
       border: 1px solid #b7b7b7;
     }
@@ -292,6 +283,9 @@
   &--active{
     background-color: #04B578;
     color: $white;
+    &:hover{
+      border-color: #04B578;
+    }
   }
 }
 /* ========== Dropdown ========== */
@@ -351,6 +345,9 @@
   margin-bottom: 30px;
 }
 /* ========== Tabs style ========== */
+.tab-overlay{
+  position: relative;
+}
 .main__child{
   .nav-tabs{
     border-color: #dedede;
@@ -363,9 +360,9 @@
   .nav-link{
     font-size: 18px;
     color: #616161;
-    background-color: #F7F9FF;
+    background-color: #f9f9f9;
     border-color: #dedede;
-    padding: 10px 30px;
+    padding: 15px 35px;
     &:hover{
       color: #01567A;
     }

@@ -73,10 +73,10 @@
     margin: 42px 0;
   }
   &__item{
-    line-height: 2.813;
+    line-height: 1.2;
     color: $darkGrey;
-    display: flex;
-    align-items: center;
+    display: inline-flex;
+    align-items: baseline;
     &:before{
       content: "";
       display: block;
@@ -86,6 +86,9 @@
       border-radius: 100%;
       margin-right: 25px;
       flex-shrink: 0;
+    }
+    & ~ .help__item{
+      margin-top: 25px;
     }
   }
   &__subtitle{
