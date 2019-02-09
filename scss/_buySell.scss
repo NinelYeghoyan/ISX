@@ -12,12 +12,13 @@
     cursor: pointer;
   }
   &__drop{
-    width: 190px;
     margin-bottom: 50px;
-    .drop__value{
+    .select2-container--default .select2-selection--single .select2-selection__rendered {
       color: #01567a;
     }
-
+    .select2-container--default .select2-selection--single .select2-selection__arrow b{
+      background-image: url(../img/icons/arrow_down-blue.png);
+    }
   }
   // statistic
   &__statistic{

@@ -5,18 +5,20 @@
     color: #01567a;
   }
   &__drop{
-    .drop__box{
-      height: 100%;
+    text-align: right;
+    .select2-container--default .select2-selection--single{
       border: none;
-      padding: 0;
     }
-    .drop__value{
-      margin-right: 10px;
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+      line-height: 1;
+      //padding-left: 0;
+      //padding-right: 0;
     }
-    .drop__list{
-      min-width: 120px;
-      top: 25px;
-      left: -39px;
+    .select2-container .select2-selection--single{
+      height: 100%;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow{
+      right: 4px;
     }
   }
   // balance style
